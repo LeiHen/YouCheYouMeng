@@ -1,1 +1,37 @@
 @charset "utf-8";
+
+
+/* 引导页 */
+.guide{ position: relative; height: 100%; width: 100%; background: url(../images/guide_bg.jpg) no-repeat center top; background-size: cover; overflow: hidden; }
+.guide .logo{ display: block; width:61.8%; margin: 30% auto 2em auto; }
+.guide p{ text-align: center; font-size: 1.6em; line-height: 2em; color: #ff4e00; }
+
+
+
+
+
+
+
+
+/* css3过渡 */
+.header .location,
+.header .member,
+.nav_bottom .link,
+.nav_sub .itme .link,
+.u_btn{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+
+
+
+
+/*
+    background: -webkit-image-set(
+		url(../images/guide_bg.jpg) 1x,
+		url(../images/guide_bg.jpg) 2x);
+*/

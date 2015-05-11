@@ -1,17 +1,116 @@
 @charset "utf-8";
 
 /*全局*/
+html,
+body{
+	position: relative;
+	height: 100%;
+}
 body{
 	font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif;
 	font-size:62.5%;
+    
 }
 
 a:link,a:visited,a:hover,a:active{
-
+    text-decoration: none;
 }
 
 
 
+.padding{
+    padding:10px;
+}
+.padding_tb{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.padding_lr{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.wrap{
+    
+}
+
+
+
+/* 头部 */
+.header{ height: 68px; border-bottom: 1px solid #c4c4c4; }
+
+.header .wrap_logo,
+.header .location,
+.header .member{ display: inline-block; vertical-align:text-top; height: 68px; }
+
+.header .wrap_logo{ width: 120px; }
+.header .wrap_logo .logo{ display:block; width: 120px; max-width: 120px; }
+
+/* 位置 */
+.header .location{ color: #aaaaaa; font-size: 1.4em; line-height: 68px; margin: 0 10px; }
+.header .location:hover,
+.header .hover{ color: #ff4e00; }
+
+/* 会员 */
+.header .member{ float: right; text-align: right; font-size: 1.4em; line-height: 68px; vertical-align:top; color: #8d8d8d; }
+.header .member .icon{ font-size: 2em; line-height: 68px; padding: 0 4px; }
+.header .member:hover{ color: #ff4e00; }
+
+
+/* 主要 */
+.main{
+    
+}
+
+
+/* 底部 */
+.footer{ }
+.footer .nav_bottom{ }
+.footer .copy{ padding: 10px 0; font-size: 1.4em; line-height: 2em; text-align: center; }
+.footer .copy .link{ display: inline-block; color: #8d8d8d; padding: 0 8px; line-height: 1em; margin: 10px auto; border-left: 1px solid #aaaaaa; }
+.footer .copy .link:first-child{ border-left: none; }
+.footer .copy p{ color: #aaaaaa; text-transform: uppercase; }
+
+
+
+/* nav */
+.nav{
+    margin: 10px auto;
+}
+
+
+
+/* nav main */
+.nav_main{ overflow: hidden; }
+.nav_main .itme{ margin: 0 auto 14px auto; }
+.nav_main .itme .link{ position: relative; text-align: center; display: block; font-size: 1.6em; line-height: 20px; height: 40px; padding: 10px 0; color: #fff; background: #8d8d8d; }
+.nav_main .itme:first-child .link{ border-radius: 8px 0 0 8px; }
+.nav_main .itme:last-child .link{ border-radius: 0 8px 8px 0; }
+.nav_main .itme .link .triangle{ position: absolute; top: 100%; left: 0; right: 0; margin: 0 auto; width: 0; height: 0; display: none; border-color: #8d8d8d transparent transparent transparent; border-width: 10px 10px 0 10px; border-style: solid; z-index: 0; }
+
+.nav_main .itme .link:hover,
+.nav_main .itme .hover{ background: #ff4e00; }
+.nav_main .itme .link:hover .triangle,
+.nav_main .itme .hover .triangle{ display: block; border-color: #ff4e00 transparent transparent transparent; }
+
+
+/* nav sub */
+.nav_sub{ overflow: hidden; background: #e7e7e7; }
+.nav_sub .itme{ float: left; }
+.nav_sub .itme .link{ text-align: center; display: block; font-size: 1.6em; padding: 10px 0; color: #8d8d8d; position: relative; }
+.nav_sub .itme .link .wire{ position: absolute; bottom: 0; height: 2px; width: 100%; display: none; background: #dc4300; }
+.nav_sub .itme .link .wire:before{ content:''; position: absolute; bottom: 0px; left: 0; right: 0; display: block; width: 0; margin: 0 auto; border-style: solid; border-color: transparent transparent #dc4300 transparent; border-width: 0 6px 6px 6px; }
+.nav_sub .itme .link:hover,
+.nav_sub .itme .hover{ color:#dc4300; }
+.nav_sub .itme .link:hover .wire,
+.nav_sub .itme .hover .wire{ display: block; }
+
+
+/* nav bottom */
+.nav_bottom{ width: 100%; background: #ff4e00; height: 60px; overflow: hidden; }
+.nav_bottom .link{ float: left; display: block; width: 25%; font-size:1.6em; line-height: 60px; text-align: center; color: #fff; cursor: pointer; }
+.nav_bottom .link:hover,
+.nav_bottom .hover{ background: #dc4300; }
 
 
 
@@ -19,17 +118,152 @@ a:link,a:visited,a:hover,a:active{
 /*
 	布局
 */
+.g_col_2{
+
+}
+.g_col_2 .span{
+    width: 50%;
+    float: left;
+}
+
+.g_col_4{
+
+}
+.g_col_4 .span{
+    width: 25%;
+    float: left;
+}
+
+
+
+
 
 
 /*
 	元件
 */
 
+/* 按钮 */
+.u_btn{
+    background: #ff4e00;
+    border-radius:1em;
+    font-size: 1.1em;
+    line-height: 1em;
+/*    padding: 8px 12px;*/
+/*    width: 200px;*/
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+.u_btn .p{
+    padding: 8px 12px;
+}
+
+.u_btn:visited{
+    color: #fff;
+}
+
+
+.u_btn:hover,
+.u_btn:active{
+    background: #dc4300;
+}
+
+
+
+
+.u_btn_w100{
+    width: 100%;
+}
+
+
 
 
 /*
 	模块
 */
+
+/* 列表 */
+.m_itme{
+    
+}
+.m_itme .itme{
+    overflow: hidden; 
+    position: relative;
+}
+.m_itme .itme .l{
+    position: relative;
+    float: left;
+    width: 38.2%;
+    height: 100%;
+    background: red;
+}
+.m_itme .itme .l .img{
+    max-width: 100%;
+/*    width: 100%;*/
+/*    max-height: 100%;*/
+    display: block;
+}
+.m_itme .itme .r{
+    overflow: hidden;
+}
+.m_itme .itme .content{
+    padding: 0 0 0 10px;
+}
+
+.m_itme .itme .content .list{
+    font-size: 1.4em;
+    line-height: 1.2em;
+    color: #8d8d8d;
+    margin: 0 0 8px 0;
+    overflow: hidden;
+}
+.m_itme .itme .content .list .link{
+    color: #009842;
+}
+.m_itme .itme .content .list .title{
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+.m_itme .itme .content .list .icon{
+    margin: 0 2px 0 0;
+}
+.m_itme .itme .content .list .price{
+    line-height: 1.68em;
+    padding: 8px 0;
+}
+.m_itme .itme .content .list .kilometre .icon{
+    font-size: 1.1em;
+    vertical-align: bottom;
+}
+.m_itme .itme .content .list .u_btn{
+    color: #fff;
+}
+.m_itme .itme .content .list .u_btn:visited{
+    color: #fff;
+}
+
+
+
+
+
+
+/* 拍卖中 */
+.m_itme .auction{
+    
+}
+.m_itme .auction .content .content_wrap{
+    line-height: 2em;
+}
+.m_itme .auction .content .countdown{
+    font-size: 1.2em;
+    vertical-align:middle;
+    color: #ff4e00;
+}
+
+
 
 
 
@@ -71,12 +305,13 @@ a:link,a:visited,a:hover,a:active{
 
 	全局
 	
-	  	  主色
-	 	  辅色 
-    	高亮色
-    	阴影色
-    	点睛色
+	  	  主色  ff4e00 009842
+	 	  辅色  
+    	高亮色	 ee7b00
+    	阴影色  dc4300
+    	点睛色 
     	背景色
+        灰色    深 8d8d8d 正 aaaaaa 浅 c4c4c4 最浅 e7e7e7
 
 	  字体颜色 
 
