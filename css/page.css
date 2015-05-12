@@ -7,7 +7,18 @@
 .guide p{ text-align: center; font-size: 1.6em; line-height: 2em; color: #ff4e00; }
 
 
-
+.main .more{
+    font-size: 2em;
+    margin:30px auto;
+    display: block;
+}
+.main .gps{
+    display: block;
+    cursor: pointer;
+}
+.main .gps:hover{
+	background: #aaaaaa;
+}
 
 
 
