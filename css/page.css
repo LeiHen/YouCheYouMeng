@@ -7,6 +7,7 @@
 .guide p{ text-align: center; font-size: 1.6em; line-height: 2em; color: #ff4e00; }
 
 
+
 .main .more{
     font-size: 2em;
     margin:30px auto;
@@ -21,6 +22,33 @@
 }
 
 
+/* 检索 全部条件 */
+
+/* 字母列表 */
+.letter{ }
+.letter .content{ }
+.letter .content .itme{ }
+.letter .content .itme .link{ margin: 10px 6px; font-size: 1.6em; }
+.letter .content .itme .e_btn2_gray_disabled{ color: #e7e7e7; }
+.letter .content .itme:hover .e_btn2_gray_disabled{ color: #e7e7e7; }
+.letter .content .itme:hover .e_btn2_gray_disabled:hover{ color: #e7e7e7; }
+.letter .content .itme:hover .link{ color: #fff; }
+
+.letter .content .itme:nth-child(5n+1) .link{}
+
+/* 地区 */
+.region{
+    
+}
+.region .u_title{
+    text-transform: uppercase;
+}
+.region .sub_title{
+    font-size: 1.4em;
+    line-height: 2em;
+    color: #ff4e00;
+    background: #f0f0f0;
+}
 
 
 

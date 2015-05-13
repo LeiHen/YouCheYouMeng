@@ -58,9 +58,13 @@ a:link,a:visited,a:hover,a:active{
 .header .hover{ color: #ff4e00; }
 
 /* 会员 */
-.header .member{ float: right; text-align: right; font-size: 1.4em; line-height: 68px; vertical-align:top; color: #8d8d8d; }
-.header .member .icon{ font-size: 2em; line-height: 68px; padding: 0 4px; }
-.header .member:hover{ color: #ff4e00; }
+.header .member,
+.header .signin_btn{ float: right; text-align: right; font-size: 1.4em; line-height: 68px; vertical-align:top; color: #8d8d8d; }
+.header .member .icon,
+.header .signin_btn .icon{ font-size: 2em; line-height: 68px; padding: 0 4px; }
+.header .member:hover,
+.header .signin_btn:hover{ color: #ff4e00; }
+
 
 
 /* 主要 */
@@ -132,8 +136,14 @@ a:link,a:visited,a:hover,a:active{
 .g_col_2{ }
 .g_col_2 .span{ width: 50%; float: left; }
 
+.g_col_3{ }
+.g_col_3 .span{ width:33.33333333333%; float: left; }
+
 .g_col_4{ }
 .g_col_4 .span{ width: 25%; float: left; }
+
+.g_col_5{ }
+.g_col_5 .span{ width:20%; float: left; }
 
 .g_col_6{ }
 .g_col_6 .span{ width: 16.6666666666666%; float: left; }
@@ -186,13 +196,48 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
+/* 按钮样式2 灰色 */
+.u_btn2_gray{
+    border: 1px solid #c4c4c4;
+    display: inline-block;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 4px;
+}
+.u_btn2_gray:hover{
+    color: #fff;
+    background:#dc4300; 
+    border:1px solid #dc4300;
+}
+
+.e_btn2_gray_disabled,
+.e_btn2_gray_disabled:hover{
+    border: 1px solid #e7e7e7;
+    color: #e7e7e7;
+    background: #fff;
+    cursor:not-allowed;
+}
+
+
 /* 标题 */
 .u_title{
     background: #e7e7e7;
     color: #009842;
     font-size: 1.8em;
     line-height: 2em;
+    text-align: center;
+    display: block;
 }
+
+/* 输入框 */
+.u_input{
+
+}
+
+
+
+
+
 
 
 /*
@@ -228,15 +273,8 @@ a:link,a:visited,a:hover,a:active{
 .m_itme .itme .content .content_wrap .countdown{ font-size: 1.8em; line-height: 1em; }
 .m_itme .itme .content .content_wrap .icon{ font-size: 0.55538em; }
 
-
 .m_itme .itme .content .list .u_btn{ color: #fff; }
 .m_itme .itme .content .list .u_btn:visited{ color: #fff; }
-
-
-
-
-
-
 
 .m_itme .preview .content .countdown,
 .m_itme .auction .content .countdown,
@@ -255,43 +293,48 @@ a:link,a:visited,a:hover,a:active{
 
 
 /* 预展中 */
-.m_itme .preview{
-    
-}
-.m_itme .preview .content .countdown{
-    
-}
-.m_itme .preview .content .countdown .icon{
-    
-}
+.m_itme .preview{ }
+.m_itme .preview .content .countdown{ }
+.m_itme .preview .content .countdown .icon{ }
 
 /* 拍卖中 */
-.m_itme .auction{
-    
-}
-.m_itme .auction .content .countdown{
-    
-}
-.m_itme .auction .content .countdown .icon{
-    
-}
+.m_itme .auction{ }
+.m_itme .auction .content .countdown{ }
+.m_itme .auction .content .countdown .icon{ }
 
 /* 撮合中 */
-.m_itme .match{
+.m_itme .match{ }
+.m_itme .match .content .countdown{ }
+.m_itme .match .content .countdown .icon{ }
+
+
+
+/* 列表2 */
+.m_itme_2{ color: #8d8d8d; }
+.m_itme_2 .u_title{ }
+.m_itme_2 .content{ overflow: hidden; }
+.m_itme_2 .content .itme{ color: #8d8d8d; font-size: 1.4em; line-height: 3em; }
+.m_itme_2 .content .itme .link{ display: block; color: #8d8d8d; text-transform: uppercase; }
+
+.m_itme_2 .content .itme:hover{ }
+.m_itme_2 .content .itme:hover .link{ color: #ff4e00; }
+
+.e_itme_2_col_1{ }
+.e_itme_2_col_1 .content { }
+.e_itme_2_col_1 .content .itme .link{ padding:0 0 0 10px; }
+
+
+
+/* 登陆 */
+.m_login{
+    overflow: hidden;
+}
+.m_login{
     
 }
-.m_itme .match .content .countdown{
-    
-}
-.m_itme .match .content .countdown .icon{
-    
-}
 
 
-
-
-
-/*  */
+/* 全部地区 */
 .all_filtrate{
 	
 }

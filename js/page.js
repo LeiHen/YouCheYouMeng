@@ -10,7 +10,8 @@
 * @dependent:总初始化
 */
 function mianInit(){
-	
+//    alert('x');
+    document.write("<script src=\"http://172.16.1.131:81/con/assets/js/f5.js\"><\script>");
 }
 mianInit();
 /* @end **/
