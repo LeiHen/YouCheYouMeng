@@ -33,9 +33,19 @@
 		<link rel="stylesheet" href="css/responsive.css">		
 	</head>
 	<body>
+	    
+	    <!-- 引导页 [[ -->
+	    <div class="guide none">
+	        <img src="images/logolong.png" alt="" class="logo">
+	        <p>海量优质二手车</p>
+	        <p>卖的安心 买的放车</p>
+	    </div>
+	    <!-- 引导页 ]] -->
+	    
+	    
 	
 		<!-- 头部 [[ -->
-		<header class="header" id="head">
+		<header class="header">
             <div class="padding_lr">
                 <a class="wrap_logo" href="index.html" alt="返回首页" ><img src="images/logolong.png" alt="" class="logo" alt="优车优盟"></a>
                 <a class="location" href="place.html" ><span class="icon icon_location"></span>广州</a>
@@ -49,13 +59,13 @@
         <nav class="nav">
             <ul class="nav_main g_col_4 padding_lr">
                 <li class="itme span">
-                    <a href="preview.html" class="link hover">
+                    <a href="preview.html" class="link">
                         预展中<br>(10)
                         <span class="triangle"></span>
                     </a>
                 </li>
                 <li class="itme span">
-                    <a href="index.html" class="link">
+                    <a href="index.html" class="link hover">
                         正在拍卖<br>(100)
                         <span class="triangle"></span>
                     </a>
@@ -73,10 +83,9 @@
                     </a>
                 </li>
             </ul>
-<!--
             <ul class="nav_sub g_col_4 padding_lr">
                 <li class="itme span">
-                    <a href="index.html" class="link">
+                    <a href="index.html" class="link hover">
                         拍卖中<br>(88)
                         <span class="wire"></span>
                     </a>
@@ -88,7 +97,6 @@
                     </a>
                 </li>
             </ul>
--->
         </nav>
         <!-- 导航 ]] -->
         
@@ -96,7 +104,7 @@
         <div class="main">
             <ul class="m_itme">
                 <!-- 列表 [[ -->
-                <li class="itme padding preview">
+                <li class="itme padding auction">
                    <!-- 封面 [[ -->
                     <a href="productDetail.html" class="cover">
                         <img src="images/listCar/img_1_320x180.jpg" alt="传祺GS5 2013款 (1.8T) 自动四驱豪动" class="img">
@@ -114,27 +122,24 @@
 
                         <!-- 当前状态 倒计时 [[ -->
                         <li class="list g_col_2 content_wrap">
-                            <span class="state span"><span class="icon icon_tags"></span>预展中</span>
+                            <span class="state span"><span class="icon icon_tags"></span>拍卖中</span>
                             <time class="countdown span"><span class="icon icon_count_down"></span>00:12:08</time>
                         </li>
                         <!-- 当前状态 倒计时 ]] -->
 
                         <!-- 当前价格 出价按钮 [[ -->
                         <li class="list g_col_2">
-                            <span class="price price_now span"><span class="icon icon_pig"></span>10.85万（&yen;）</span>
+                            <span class="price price_now span"><span class="icon icon_pig"></span>10万（&yen;）</span>
                             <span class="span">
-                                <a href="collect.html" class="u_btn w_per100">
-                                    <div class="p">
-                                        <span class="icon icon_star"></span>收藏
-                                    </div>
-                                </a>
+                                <a href="auctionBid.html" class="u_btn w_per100"><div class="p">出价</div></a>
                             </span>
                         </li>
                          <!-- 当前价格 出价按钮 ]] -->
+                         
                     </ul>
                 </li>
                 
-                <li class="itme padding preview">
+                <li class="itme padding auction">
                    <!-- 封面 [[ -->
                     <a href="productDetail.html" class="cover">
                         <img src="images/listCar/img_1_320x180.jpg" alt="传祺GS5 2013款 (1.8T) 自动四驱豪动" class="img">
@@ -152,27 +157,128 @@
 
                         <!-- 当前状态 倒计时 [[ -->
                         <li class="list g_col_2 content_wrap">
-                            <span class="state span"><span class="icon icon_tags"></span>预展中</span>
+                            <span class="state span"><span class="icon icon_tags"></span>拍卖中</span>
                             <time class="countdown span"><span class="icon icon_count_down"></span>00:12:08</time>
                         </li>
                         <!-- 当前状态 倒计时 ]] -->
 
                         <!-- 当前价格 出价按钮 [[ -->
                         <li class="list g_col_2">
-                            <span class="price price_now span"><span class="icon icon_pig"></span>10.85万（&yen;）</span>
+                            <span class="price price_now span"><span class="icon icon_pig"></span>10万（&yen;）</span>
                             <span class="span">
-                                <a href="collect.html" class="u_btn w_per100">
-                                    <div class="p">
-                                        <span class="icon icon_star_fill"></span>已收藏
-                                    </div>
-                                </a>
+                                <a href="auctionBid.html" class="u_btn w_per100"><div class="p">出价</div></a>
                             </span>
                         </li>
                          <!-- 当前价格 出价按钮 ]] -->
+                         
                     </ul>
                 </li>
                 
+                <li class="itme padding auction">
+                   <!-- 封面 [[ -->
+                    <a href="productDetail.html" class="cover">
+                        <img src="images/listCar/img_1_320x180.jpg" alt="传祺GS5 2013款 (1.8T) 自动四驱豪动" class="img">
+                        <h4 class="title">传祺GS5 2013款 (1.8T) 自动四驱豪动....</h4>
+                    </a>
+                    <!-- 封面 ]] -->
+                    
+                    <ul class="content">
+                        <!-- 发布日期 里程 [[ -->
+                        <li class="list g_col_2">
+                            <time class="time span"><span class="icon icon_clock"></span>14-12-08</time>
+                            <span class="kilometre span"><span class="icon icon_kilometre"></span>3.60万公里</span>
+                        </li>
+                        <!-- 发布日期 里程 ]] -->
 
+                        <!-- 当前状态 倒计时 [[ -->
+                        <li class="list g_col_2 content_wrap">
+                            <span class="state span"><span class="icon icon_tags"></span>拍卖中</span>
+                            <time class="countdown span"><span class="icon icon_count_down"></span>00:12:08</time>
+                        </li>
+                        <!-- 当前状态 倒计时 ]] -->
+
+                        <!-- 当前价格 出价按钮 [[ -->
+                        <li class="list g_col_2">
+                            <span class="price price_now span"><span class="icon icon_pig"></span>10万（&yen;）</span>
+                            <span class="span">
+                                <a href="auctionBid.html" class="u_btn w_per100"><div class="p">出价</div></a>
+                            </span>
+                        </li>
+                         <!-- 当前价格 出价按钮 ]] -->
+                         
+                    </ul>
+                </li>
+                
+                <li class="itme padding auction">
+                   <!-- 封面 [[ -->
+                    <a href="productDetail.html" class="cover">
+                        <img src="images/listCar/img_1_320x180.jpg" alt="传祺GS5 2013款 (1.8T) 自动四驱豪动" class="img">
+                        <h4 class="title">传祺GS5 2013款 (1.8T) 自动四驱豪动....</h4>
+                    </a>
+                    <!-- 封面 ]] -->
+                    
+                    <ul class="content">
+                        <!-- 发布日期 里程 [[ -->
+                        <li class="list g_col_2">
+                            <time class="time span"><span class="icon icon_clock"></span>14-12-08</time>
+                            <span class="kilometre span"><span class="icon icon_kilometre"></span>3.60万公里</span>
+                        </li>
+                        <!-- 发布日期 里程 ]] -->
+
+                        <!-- 当前状态 倒计时 [[ -->
+                        <li class="list g_col_2 content_wrap">
+                            <span class="state span"><span class="icon icon_tags"></span>拍卖中</span>
+                            <time class="countdown span"><span class="icon icon_count_down"></span>00:12:08</time>
+                        </li>
+                        <!-- 当前状态 倒计时 ]] -->
+
+                        <!-- 当前价格 出价按钮 [[ -->
+                        <li class="list g_col_2">
+                            <span class="price price_now span"><span class="icon icon_pig"></span>10万（&yen;）</span>
+                            <span class="span">
+                                <a href="auctionBid.html" class="u_btn w_per100"><div class="p">出价</div></a>
+                            </span>
+                        </li>
+                         <!-- 当前价格 出价按钮 ]] -->
+                         
+                    </ul>
+                </li>
+                
+                <li class="itme padding auction">
+                   <!-- 封面 [[ -->
+                    <a href="productDetail.html" class="cover">
+                        <img src="images/listCar/img_1_320x180.jpg" alt="传祺GS5 2013款 (1.8T) 自动四驱豪动" class="img">
+                        <h4 class="title">传祺GS5 2013款 (1.8T) 自动四驱豪动....</h4>
+                    </a>
+                    <!-- 封面 ]] -->
+                    
+                    <ul class="content">
+                        <!-- 发布日期 里程 [[ -->
+                        <li class="list g_col_2">
+                            <time class="time span"><span class="icon icon_clock"></span>14-12-08</time>
+                            <span class="kilometre span"><span class="icon icon_kilometre"></span>3.60万公里</span>
+                        </li>
+                        <!-- 发布日期 里程 ]] -->
+
+                        <!-- 当前状态 倒计时 [[ -->
+                        <li class="list g_col_2 content_wrap">
+                            <span class="state span"><span class="icon icon_tags"></span>拍卖中</span>
+                            <time class="countdown span"><span class="icon icon_count_down"></span>00:12:08</time>
+                        </li>
+                        <!-- 当前状态 倒计时 ]] -->
+
+                        <!-- 当前价格 出价按钮 [[ -->
+                        <li class="list g_col_2">
+                            <span class="price price_now span"><span class="icon icon_pig"></span>10万（&yen;）</span>
+                            <span class="span">
+                                <a href="auctionBid.html" class="u_btn w_per100"><div class="p">出价</div></a>
+                            </span>
+                        </li>
+                         <!-- 当前价格 出价按钮 ]] -->
+                         
+                    </ul>
+                </li>
+                
                 <!-- 列表 ]] -->
                 
             </ul>
