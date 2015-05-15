@@ -124,7 +124,7 @@ html.h body .footer{
 
 /* nav */
 .nav{
-    margin: 10px auto;
+    margin: 10px auto; 
 }
 
 
@@ -167,67 +167,26 @@ html.h body .footer{
 
 
 /* 管理 head */
-.manage_head{
-    background: #e7e7e7;
-    overflow: hidden;
-}
-.manage_head .itme{
-    float: right;
-    margin: 0 0 0 0px;
-}
-.manage_head .itme:last-child{
-    float: left;
-    margin: 0;
-}
-.manage_head .itme .link{
-    color: #8d8d8d;
-    font-size: 1.4em;
-    line-height: 40px;
-    display: block;
-    overflow: hidden;
-    padding: 0 10px;
-    height: 40px;
-    vertical-align:top;
-}
-.manage_head .itme .link .icon{
-    font-size: 1.2em;
-    line-height: 2.380952380952381em;
-}
+.manage_head{ background: #e7e7e7; overflow: hidden; }
+.manage_head .itme{ float: right; margin: 0 0 0 0px; }
+.manage_head .itme:last-child{ float: left; margin: 0; }
+.manage_head .itme .link{ color: #8d8d8d; font-size: 1.4em; line-height: 40px; display: block; overflow: hidden; padding: 0 10px; height: 40px; vertical-align:top; }
+.manage_head .itme .link .icon{ font-size: 1.2em; line-height: 2.380952380952381em; }
 
-.manage_head .itme .link_home{
-
-}
-.manage_head .itme .link_home .icon{
-    font-size: 1.8em;
-    line-height: 1.339285714285714em;
-}
+.manage_head .itme .link_home{ }
+.manage_head .itme .link_home .icon{ font-size: 1.8em; line-height: 1.339285714285714em; }
 
 /* 单个 icon */
-.manage_head .itme .link_icon_home{
-
-}
-.manage_head .itme .link_icon_home .icon{
-    font-size: 2em;
-    line-height: 1.428571428571429em;
-}
+.manage_head .itme .link_icon_home{ }
+.manage_head .itme .link_icon_home .icon{ font-size: 2em; line-height: 1.428571428571429em; }
 
 /* icon exit */
-.manage_head .itme .link_icon_exit{
-
-}
-.manage_head .itme .link_icon_exit .icon{
-    font-size: 1.2em;
-    line-height: 2.380952380952381em;
-    color: #aaaaaa;
-}
+.manage_head .itme .link_icon_exit{ }
+.manage_head .itme .link_icon_exit .icon{ font-size: 1.2em; line-height: 2.380952380952381em; color: #aaaaaa; }
 
 
-.manage_head .itme a.link:hover{
-   
-}
-.manage_head .itme a.link:hover .icon{
-   color: #ff4e00;
-}
+.manage_head .itme a.link:hover{ }
+.manage_head .itme a.link:hover .icon{ color: #ff4e00; }
 
 
 
@@ -269,14 +228,17 @@ html.h body .footer{
 }
 
 
-.nav_manage .itme .link:hover{
+.nav_manage .itme .link:hover,
+.nav_manage .itme .hover{
     
 }
-.nav_manage .itme .link:hover .img_wrap{
+.nav_manage .itme .link:hover .img_wrap,
+.nav_manage .itme .hover .img_wrap{
     border: 2px solid #ff4e00;
-    background: #aaaaaa;
+    background: #ff4e00;
 }
-.nav_manage .itme .link:hover .title{
+.nav_manage .itme .link:hover .title,
+.nav_manage .itme .hover .title{
     color: #8d8d8d;
 }
 
