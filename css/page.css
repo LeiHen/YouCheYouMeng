@@ -66,7 +66,11 @@
 .nav_bottom .link,
 .nav_sub .itme .link,
 .u_btn,
-.m_login .itme{
+.m_login .itme,
+.nav_manage .itme .link,
+.nav_manage .itme .link .img_wrap,
+.nav_manage .itme .link .img_wrap .img,
+.nav_manage .itme .link .title{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

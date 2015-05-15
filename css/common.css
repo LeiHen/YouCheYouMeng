@@ -64,11 +64,18 @@ a:link,a:visited,a:hover,a:active{
 
 /* 会员 */
 .header .member,
-.header .signin_btn{ float: right; text-align: right; font-size: 1.4em; line-height: 68px; vertical-align:top; color: #8d8d8d; overflow: hidden;}
+.header .signin_btn,
+.header .name{ float: right; text-align: right; font-size: 1.4em; line-height: 68px; vertical-align:top; color: #8d8d8d; overflow: hidden;}
 .header .member .icon,
 .header .signin_btn .icon{ font-size: 2em; line-height: 68px; padding: 0 4px; }
 .header .member:hover,
 .header .signin_btn:hover{ color: #ff4e00; }
+
+.header .name{
+    color: #ff4e00;
+    overflow: hidden;
+}
+
 
 
 
@@ -157,6 +164,126 @@ html.h body .footer{
 .nav_bottom .link:hover,
 .nav_bottom .hover{ background: #dc4300; }
 
+
+
+/* 管理 head */
+.manage_head{
+    background: #e7e7e7;
+    overflow: hidden;
+}
+.manage_head .itme{
+    float: right;
+    margin: 0 0 0 0px;
+}
+.manage_head .itme:last-child{
+    float: left;
+    margin: 0;
+}
+.manage_head .itme .link{
+    color: #8d8d8d;
+    font-size: 1.4em;
+    line-height: 40px;
+    display: block;
+    overflow: hidden;
+    padding: 0 10px;
+    height: 40px;
+    vertical-align:top;
+}
+.manage_head .itme .link .icon{
+    font-size: 1.2em;
+    line-height: 2.380952380952381em;
+}
+
+.manage_head .itme .link_home{
+
+}
+.manage_head .itme .link_home .icon{
+    font-size: 1.8em;
+    line-height: 1.339285714285714em;
+}
+
+/* 单个 icon */
+.manage_head .itme .link_icon_home{
+
+}
+.manage_head .itme .link_icon_home .icon{
+    font-size: 2em;
+    line-height: 1.428571428571429em;
+}
+
+/* icon exit */
+.manage_head .itme .link_icon_exit{
+
+}
+.manage_head .itme .link_icon_exit .icon{
+    font-size: 1.2em;
+    line-height: 2.380952380952381em;
+    color: #aaaaaa;
+}
+
+
+.manage_head .itme a.link:hover{
+   
+}
+.manage_head .itme a.link:hover .icon{
+   color: #ff4e00;
+}
+
+
+
+
+
+
+/* nav manage */
+.nav_manage{
+    overflow: hidden;
+    margin: 20px auto;
+}
+.nav_manage .itme{
+
+}
+.nav_manage .itme .link{
+    display: block;
+    text-align: center;
+}
+.nav_manage .itme .link .img_wrap{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #c4c4c4;
+    background: none;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.nav_manage .itme .link .img_wrap .img{
+    display: block;
+    width: 100%;
+}
+.nav_manage .itme .link .title{
+    color: #8d8d8d;
+    text-align: center;
+/*    padding: 10px 0;*/
+    font-size: 1.6em;
+    line-height: 3em;
+}
+
+
+.nav_manage .itme .link:hover{
+    
+}
+.nav_manage .itme .link:hover .img_wrap{
+    border: 2px solid #ff4e00;
+    background: #aaaaaa;
+}
+.nav_manage .itme .link:hover .title{
+    color: #8d8d8d;
+}
+
+
+.nav_manage{
+
+}
 
 
 
@@ -336,79 +463,24 @@ html.h body .footer{
 
 
 /* 登陆 */
-.m_login{
-    padding: 30px auto;
-    color: #8d8d8d;
-}
-.m_login .itme{
-    position: relative;
-    border: 1px solid #c4c4c4;
-    border-radius: 4px;
-    font-size: 1.6em;
-    line-height: 2em;
-    padding: 0 0 0 60px;
-    margin: 20px auto;
-}
-.m_login .itme .input{
-    padding: 16px;
-    line-height: 1em;
-    font-size: 1em;
-}
+.m_login{ padding: 30px auto; color: #8d8d8d; }
+.m_login .itme{ position: relative; border: 1px solid #c4c4c4; border-radius: 4px; font-size: 1.6em; line-height: 2em; padding: 0 0 0 60px; margin: 20px auto; }
+.m_login .itme .input{ padding: 16px; line-height: 1em; font-size: 1em; }
 .m_login .itme .icon,
-.m_login .itme .hint{
-    position: absolute;
-    top: 1px;
-    line-height: 48px;
-    color: #aaaaaa;
-    display: block;
-}
-.m_login .itme .icon{
-    left: 1px;
-    width: 60px;
-    font-size: 1.4em;
-    text-align: center;
-}
-.m_login .itme .hint{
-    left: 77px;
-    font-size: 1em;  
-}
+.m_login .itme .hint{ position: absolute; top: 1px; line-height: 48px; color: #aaaaaa; display: block; }
+.m_login .itme .icon{ left: 1px; width: 60px; font-size: 1.4em; text-align: center; }
+.m_login .itme .hint{ left: 77px; font-size: 1em; }
 
+.m_login .itme_submit{ position: relative; }
+.m_login .itme_submit .u_btn{ font-size: 1.8em; line-height: 2em; border-radius:2em; }
+.m_login .itme_submit .btn{ position: absolute; left: 0; right: 0; top: 0; bottom:0; margin: auto; opacity: 0; filter: opacity(0); }
 
-.m_login .itme_submit{
-    position: relative;
-}
-.m_login .itme_submit .u_btn{
-    font-size: 1.8em;
-    line-height: 2em;
-    border-radius:2em;
-}
-.m_login .itme_submit .btn{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom:0 ;
-    margin: auto;
-    opacity: 0;
-    filter: opacity(0);
-}
-
-.m_login .itme_more{
-    
-}
+.m_login .itme_more{ }
 .m_login .itme:hover,
-.m_login .itme:focus{
-    border: 1px solid #ff4e00;
-}
-.m_login .itme:focus .hint{
-    display: none;
-}
-.m_login .itme .input:focus{
-    
-}
-.m_login .itme .input:focus+.hint{
-    display: none;
-}
+.m_login .itme:focus{ border: 1px solid #ff4e00; }
+.m_login .itme:focus .hint{ display: none; }
+.m_login .itme .input:focus{ }
+.m_login .itme .input:focus+.hint{ display: none; }
 
 
 
@@ -453,12 +525,24 @@ html.h body .footer{
 	全局
 	
 	  	  主色  ff4e00 009842
-	 	  辅色  
-    	高亮色	 ee7b00
-    	阴影色  dc4300
-    	点睛色 
-    	背景色
+	 	  辅色
+
+    	高亮	ee7b00
+    	阴影  dc4300
+    	点睛  
+
+    	背景
         灰色    深 8d8d8d 正 aaaaaa 浅 c4c4c4 最浅 e7e7e7
+
+        文字
+        高亮  c4c4c4
+        正常  aaaaaa
+        阴影  8d8d8d
+
+        边
+        高亮  e7e7e7
+        正常  c4c4c4
+        阴影  aaaaaa
 
 	  字体颜色 
 
@@ -478,6 +562,8 @@ html.h body .footer{
 
 		  边距
 		内填充
+
+
 
 */
 
