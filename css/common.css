@@ -45,6 +45,10 @@ a:link,a:visited,a:hover,a:active{
 .w_per618{ width: 61.8%; }
 .w_per382{ width: 38.2%; }
 
+.w_per40{
+	width: 40%;
+}
+.w_per60{width: 60%;}
 
 
 /* 头部 */
@@ -373,6 +377,21 @@ html.h body .footer{
 }
 
 
+/* 未发布 */
+.m_itme .unreleased{ }
+.m_itme .unreleased .content .countdown{ }
+.m_itme .unreleased .content .countdown .icon{ }
+
+/* 询价中 */
+.m_itme .enquiry{ }
+.m_itme .enquiry .content .countdown{ }
+.m_itme .enquiry .content .countdown .icon{ }
+
+/* 询价结束 */
+.m_itme .enquiryEnd{ }
+.m_itme .enquiryEnd .content .countdown{ }
+.m_itme .enquiryEnd .content .countdown .icon{ }
+
 
 /* 预展中 */
 .m_itme .preview{ }
@@ -388,6 +407,27 @@ html.h body .footer{
 .m_itme .match{ }
 .m_itme .match .content .countdown{ }
 .m_itme .match .content .countdown .icon{ }
+
+/* 拍卖成功 */
+.m_itme .match_succeed{ }
+.m_itme .match_succeed .content .countdown{ }
+.m_itme .match_succeed .content .countdown .icon{ }
+
+/* 撮合成功 */
+.m_itme .matchEnd{ }
+.m_itme .matchEnd .content .countdown{ }
+.m_itme .matchEnd .content .countdown .icon{ }
+
+/* 流标 */
+.m_itme .failed{ }
+.m_itme .failed .content .countdown{ }
+.m_itme .failed .content .countdown .icon{ }
+
+/* 撮合流标 */
+.m_itme .match_failed{ }
+.m_itme .match_failed .content .countdown{ }
+.m_itme .match_failed .content .countdown .icon{ }
+
 
 
 
