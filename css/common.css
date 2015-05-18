@@ -293,12 +293,31 @@ html.h body .footer{
 .e_btn_gray:active{ color: #fff; background: #dc4300; }
 
 
+/* 按钮禁用 */
+.e_btn_disabled{
+    color: #c4c4c4; background: #e7e7e7;
+    cursor: normal;
+}
+
+/*.e_btn_disabled:link,*/
+/*.e_btn_disabled:visited,*/
+.e_btn_disabled:hover,
+.e_btn_disabled:active{
+    color: #c4c4c4; background: #e7e7e7;
+}
+
+
+
+
+
 /* 按钮样式2 灰色 */
 .u_btn2_gray{ border: 1px solid #c4c4c4; display: inline-block; text-align: center; background: #f7f7f7; border-radius: 4px; }
 .u_btn2_gray:hover{ color: #fff; background:#dc4300; border:1px solid #dc4300; }
 
 .e_btn2_gray_disabled,
 .e_btn2_gray_disabled:hover{ border: 1px solid #e7e7e7; color: #e7e7e7; background: #fff; cursor:not-allowed; }
+
+
 
 
 /* 标题 */
@@ -338,29 +357,44 @@ html.h body .footer{
 .m_itme .itme{ overflow: hidden; position: relative; border-bottom: 1px solid #c4c4c4; margin: 0 0 0px 0; padding-top:20px; }
 .m_itme .itme .cover{ width: 100%; display: block; }
 .m_itme .itme .cover .img{ max-width: 100%; width:100%; display: block; min-height: 169px; }
-.m_itme .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding: 10px 0; }
+.m_itme .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding: 10px 0 0 0; }
 
-.m_itme .itme .content{ }
-.m_itme .itme .content .list{ font-size: 1.4em; line-height: 1em; color: #8d8d8d; margin: 6px 0; overflow: hidden; }
-.m_itme .itme .content .list .icon{ padding: 0 4px 0 0; }
+.m_itme .itme .content{
+}
+.m_itme .itme .content .list{
+	font-size: 1.4em;
+	line-height: 1em;
+	color: #8d8d8d;
+	margin: 14px 0;
+	overflow: hidden;
+}
+.m_itme .itme .content .list .icon{
+	padding: 0 4px 0 0;
+}
 
-.m_itme .itme .content .list .time{ }
-.m_itme .itme .content .list .time .icon{ font-size: 1em; line-height: 1em; }
-.m_itme .itme .content .list .kilometre{ overflow: hidden; vertical-align: top; }
-.m_itme .itme .content .list .kilometre .icon{ font-size: 1.3em; line-height: 0.8em; }
-.m_itme .itme .content .list .state{ overflow: hidden;}
+.m_itme .itme .content .list .time,
+.m_itme .itme .content .list .kilometre,
+.m_itme .itme .content .list .state,
+.m_itme .itme .content .list .price{ height: 16px; line-height: 16px; overflow: hidden;vertical-align: top;}
+
+.m_itme .itme .content .list .time{}
+.m_itme .itme .content .list .time .icon{ font-size: 1em; line-height:1.2em; }
+
+.m_itme .itme .content .list .kilometre{}
+.m_itme .itme .content .list .kilometre .icon{ font-size: 1.2em; line-height: 0.9em; }
+
+.m_itme .itme .content .list .state{}
 .m_itme .itme .content .list .state .icon{ font-size: 1.15em; line-height: 0.9em; }
 
-.m_itme .itme .content .list .price{ overflow: hidden; line-height: 31px; height: 31px;}
-.m_itme .itme .content .list .price .icon{ font-size: 1.3em; line-height: 31px;height: 31px;}
+.m_itme .itme .content .list .price{}
+.m_itme .itme .content .list .price .icon{ font-size: 1.1em; line-height: 1.2em;}
 
-.m_itme .itme .content .list:last-child{ margin: 10px 0; }
+.m_itme .itme .content .list .countdown{ color: #ff4e00; font-size: 1.6em; line-height: 32px; height: 32px; overflow: hidden; }
+.m_itme .itme .content .list .countdown .icon{ color: #8d8d8d; font-size: 0.72em; line-height: 1em; }
 
-.m_itme .itme .content .content_wrap{ line-height: 1em; padding: 4px 0; }
-.m_itme .itme .content .content_wrap .state{ line-height: 2.68em; height: 1.785714285714286em; /* 14/25 */
-    overflow: hidden; }
-.m_itme .itme .content .content_wrap .countdown{ font-size: 1.8em; line-height: 1em; }
-.m_itme .itme .content .content_wrap .icon{ font-size: 0.55538em; }
+.m_itme .itme .content .last{ margin: 20px 0 10px 0; }
+.m_itme .itme .content .list:last-child{ margin: 20px 0 10px 0; }
+
 
 .m_itme .itme .content .list .u_btn{ color: #fff; }
 .m_itme .itme .content .list .u_btn:visited{ color: #fff; }
@@ -379,56 +413,147 @@ html.h body .footer{
 
 /* 未发布 */
 .m_itme .unreleased{ }
-.m_itme .unreleased .content .countdown{ }
-.m_itme .unreleased .content .countdown .icon{ }
+
 
 /* 询价中 */
 .m_itme .enquiry{ }
-.m_itme .enquiry .content .countdown{ }
-.m_itme .enquiry .content .countdown .icon{ }
+
 
 /* 询价结束 */
-.m_itme .enquiryEnd{ }
-.m_itme .enquiryEnd .content .countdown{ }
-.m_itme .enquiryEnd .content .countdown .icon{ }
+.m_itme .enquiry_end{ }
+
 
 
 /* 预展中 */
 .m_itme .preview{ }
-.m_itme .preview .content .countdown{ }
-.m_itme .preview .content .countdown .icon{ }
+
 
 /* 拍卖中 */
 .m_itme .auction{ }
-.m_itme .auction .content .countdown{ }
-.m_itme .auction .content .countdown .icon{ }
+
 
 /* 撮合中 */
 .m_itme .match{ }
-.m_itme .match .content .countdown{ }
-.m_itme .match .content .countdown .icon{ }
+
 
 /* 拍卖成功 */
-.m_itme .match_succeed{ }
-.m_itme .match_succeed .content .countdown{ }
-.m_itme .match_succeed .content .countdown .icon{ }
+.m_itme .auction_succeed{ }
+.m_itme .auction_succeed .content .list .price{}
+.m_itme .auction_succeed .content .list .price .icon{ font-size: 1.4em; line-height: 0.8em;}
+
 
 /* 撮合成功 */
-.m_itme .matchEnd{ }
-.m_itme .matchEnd .content .countdown{ }
-.m_itme .matchEnd .content .countdown .icon{ }
+.m_itme .match_succeed{ }
+.m_itme .match_succeed .content .list .price{}
+.m_itme .match_succeed .content .list .price .icon{ font-size: 1.4em; line-height: 0.8em;}
+
 
 /* 流标 */
 .m_itme .failed{ }
-.m_itme .failed .content .countdown{ }
-.m_itme .failed .content .countdown .icon{ }
+
 
 /* 撮合流标 */
-.m_itme .match_failed{ }
-.m_itme .match_failed .content .countdown{ }
-.m_itme .match_failed .content .countdown .icon{ }
+.m_itme .failed_match{ }
 
 
+/* 列表 4S */
+.m_itme_4s{
+    
+}
+.m_itme_4s .itme{
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #c4c4c4;
+	margin: 0 0 0px 0;
+    padding-bottom: 10px;
+/*	padding-top:20px;*/
+}
+
+.m_itme_4s .itme .itme_head{
+    background: #e7e7e7;
+    color: #8d8d8d;
+    font-size:1.4em;
+    line-height: 2.4em;
+    overflow: hidden;
+}
+
+.m_itme_4s .itme .itme_head .icon{
+	padding: 0 4px 0 0;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+
+
+/* 封面 */
+.m_itme_4s .itme .cover{ width: 100%; display: block; }
+.m_itme_4s .itme .cover .img{ max-width: 100%; width:100%; display: block; min-height: 169px; }
+.m_itme_4s .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding-top: 10px; }
+
+/* 参数 */
+.m_itme_4s .itme .content{
+
+}
+.m_itme_4s .itme .content .list{
+	font-size: 1.4em;
+	line-height: 1em;
+	color: #8d8d8d;
+	margin: 14px 0;
+	overflow: hidden;
+}
+.m_itme_4s .itme .content .list .icon{
+	padding: 0 4px 0 0;
+}
+
+/* 按钮 */
+.m_itme_4s .itme .content .btn_wrap{
+    margin: 30px auto;
+}
+
+.m_itme_4s .itme .content .btn_wrap .span{
+    float: right;
+}
+.m_itme_4s .itme .content .btn_wrap .span .padding_lr{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.m_itme_4s .itme .content .info{
+	
+}
+.m_itme_4s .itme .content .info b{
+	color: #ff4e00;
+}
+
+
+/* 针对单个icon */
+.m_itme_4s .itme .itme_head .time,
+.m_itme_4s .itme .itme_head .state{ height: 32px; overflow: hidden; vertical-align: top; }
+
+.m_itme_4s .itme .itme_head .time{ }
+.m_itme_4s .itme .itme_head .time .icon{ font-size: 1em; line-height: 32px; }
+
+.m_itme_4s .itme .itme_head .state{ float: right; }
+.m_itme_4s .itme .itme_head .state .icon{ font-size: 1.1em; line-height: 34px; }
+
+.m_itme_4s .itme .content .kilometre,
+.m_itme_4s .itme .content .price,
+.m_itme_4s .itme .content .preview .price,
+.m_itme_4s .itme .content .preview .auction_succeed{
+    height: 16px; line-height: 16px; overflow: hidden;vertical-align: top;
+}
+
+.m_itme_4s .itme .content .kilometre{ }
+.m_itme_4s .itme .content .kilometre .icon{ font-size: 1.2em;  line-height: 0.9em; }
+
+.m_itme_4s .itme .content .price{ }
+.m_itme_4s .itme .content .price .icon{ font-size:  1.15em;  line-height: 0.9em;}
+
+.m_itme_4s .itme .content .preview .price{}
+.m_itme_4s .itme .content .preview .price .icon{ font-size: 1.1em; line-height: 1.4em;}
+
+.m_itme_4s .itme .content .preview .auction_succeed .price{}
+.m_itme_4s .itme .content .preview .auction_succeed .price .icon{ font-size: 1.4em; line-height: 0.8em;}
 
 
 /* 列表2 */
@@ -448,6 +573,13 @@ html.h body .footer{
 .e_itme_2_col_1{ }
 .e_itme_2_col_1 .content { }
 .e_itme_2_col_1 .content .itme .link{ padding:0 0 0 10px; }
+
+
+
+
+
+
+
 
 
 /* 字母列表 */
