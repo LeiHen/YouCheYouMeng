@@ -45,9 +45,8 @@ a:link,a:visited,a:hover,a:active{
 .w_per618{ width: 61.8%; }
 .w_per382{ width: 38.2%; }
 
-.w_per40{
-	width: 40%;
-}
+.w_per25{width: 25%;}
+.w_per40{width: 40%;}
 .w_per60{width: 60%;}
 
 
@@ -127,9 +126,7 @@ html.h body .footer{
 
 
 /* nav */
-.nav{
-    margin: 10px auto; 
-}
+.nav{ margin: 10px auto; position: relative; }
 
 
 
@@ -141,6 +138,8 @@ html.h body .footer{
 .nav_main .itme:last-child .link{ border-radius: 0 8px 8px 0; }
 .nav_main .itme .link .triangle{ position: absolute; top: 100%; left: 0; right: 0; margin: 0 auto; width: 0; height: 0; display: none; border-color: #8d8d8d transparent transparent transparent; border-width: 10px 10px 0 10px; border-style: solid; z-index: 0; }
 
+
+
 .nav_main .itme .link:hover,
 .nav_main .itme .hover{ background: #ff4e00; }
 .nav_main .itme .link:hover .triangle,
@@ -149,6 +148,7 @@ html.h body .footer{
 .nav_main .itme .link:active{ background: #dc4300; }
 .nav_main .itme .link:active .triangle{ display: block; border-color: #dc4300 transparent transparent transparent; }
 
+.nav_main .itme .link .none{display:none;}
 
 /* nav sub */
 .nav_sub{ overflow: hidden; background: #e7e7e7; }
@@ -161,12 +161,38 @@ html.h body .footer{
 .nav_sub .itme .link:hover .wire,
 .nav_sub .itme .hover .wire{ display: block; }
 
+.nav_sub .more{ }
+.nav_sub .more > .link{ display: block; height: 39spx; line-height: 39px; }
+.nav_sub .more:hover > .link,
+.nav_sub .more_hover:hover > .link{ -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg); transform:rotate(90deg); }
+/*
+.nav_sub .more:hover > .nav_three,
+.nav_sub .more_hover:hover > .nav_three{
+    display: block;
+}
+*/
 
 /* nav bottom */
 .nav_bottom{ width: 100%; background: #ff4e00; height: 60px; overflow: hidden; }
 .nav_bottom .link{ float: left; display: block; width: 25%; font-size:1.6em; line-height: 60px; text-align: center; color: #fff; cursor: pointer; }
 .nav_bottom .link:hover,
 .nav_bottom .hover{ background: #dc4300; }
+
+
+/* nav three */
+.nav_three{ overflow: hidden; border-radius: 8px; background: #8d8d8d; background: rgba(141, 141, 141, 0.9); padding: 8px 0; position: absolute; z-index: 2; right: 10px; top: 100%; }
+/*.nav_three:before{ position: absolute; top: 0; bottom: 100%; margin: 0 auto; width: 0; height: 0; display: none; border-color: transparent transparent #8d8d8d transparent; border-width: 10px 10px 0 10px; border-style: solid; z-index: 0; }*/
+.nav_three .itme{ float: none; }
+.nav_three .itme .link{ position: relative; text-align: center; display: block; font-size: 1.4em; line-height: 20px; padding: 10px 0; color: #fff; cursor: pointer; }
+.nav_three .itme .link .icon{ }
+.nav_three .itme:hover .link{ background: rgba(255, 78, 0,0.9); color: #fff; }
+
+/*
+.nav_three .itme:first-child .link{  }
+.nav_three .itme:last-child .link{  }
+.nav_three .itme .link .triangle,
+.nav_three .itme:first-child .link{ }
+*/
 
 
 
@@ -194,63 +220,19 @@ html.h body .footer{
 
 
 
-
-
-
 /* nav manage */
-.nav_manage{
-    overflow: hidden;
-    margin: 20px auto;
-}
-.nav_manage .itme{
-
-}
-.nav_manage .itme .link{
-    display: block;
-    text-align: center;
-}
-.nav_manage .itme .link .img_wrap{
-    width: 80px;
-    height: 80px;
-    border: 2px solid #c4c4c4;
-    background: none;
-    border-radius: 50%;
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
-}
-.nav_manage .itme .link .img_wrap .img{
-    display: block;
-    width: 100%;
-}
-.nav_manage .itme .link .title{
-    color: #8d8d8d;
-    text-align: center;
-/*    padding: 10px 0;*/
-    font-size: 1.6em;
-    line-height: 3em;
-}
-
-
+.nav_manage{ overflow: hidden; margin: 20px auto; }
+.nav_manage .itme{ }
+.nav_manage .itme .link{ display: block; text-align: center; }
+.nav_manage .itme .link .img_wrap{ width: 80px; height: 80px; border: 2px solid #c4c4c4; background: none; border-radius: 50%; overflow: hidden; display: block; margin: 0 auto; }
+.nav_manage .itme .link .img_wrap .img{ display: block; width: 100%; }
+.nav_manage .itme .link .title{ color: #8d8d8d; text-align: center; font-size: 1.6em; line-height: 3em; }
 .nav_manage .itme .link:hover,
-.nav_manage .itme .hover{
-    
-}
+.nav_manage .itme .hover{ }
 .nav_manage .itme .link:hover .img_wrap,
-.nav_manage .itme .hover .img_wrap{
-    border: 2px solid #ff4e00;
-    background: #ff4e00;
-}
+.nav_manage .itme .hover .img_wrap{ border: 2px solid #ff4e00; background: #ff4e00; }
 .nav_manage .itme .link:hover .title,
-.nav_manage .itme .hover .title{
-    color: #8d8d8d;
-}
-
-
-.nav_manage{
-
-}
-
+.nav_manage .itme .hover .title{ color: #8d8d8d; }
 
 
 /*
@@ -280,7 +262,7 @@ html.h body .footer{
 */
 
 /* 按钮 */
-.u_btn{ background: #ff4e00; border-radius:1em; font-size: 1.1em; line-height: 1em; color: #fff; display: inline-block; text-align: center; border: none;}
+.u_btn{ background: #ff4e00; border-radius:1em; font-size: 1em; line-height: 1em; color: #fff; display: inline-block; text-align: center; border: none;}
 .u_btn .p{ padding: 8px 12px; }
 .u_btn:visited{ color: #fff; }
 
@@ -359,18 +341,9 @@ html.h body .footer{
 .m_itme .itme .cover .img{ max-width: 100%; width:100%; display: block; min-height: 169px; }
 .m_itme .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding: 10px 0 0 0; }
 
-.m_itme .itme .content{
-}
-.m_itme .itme .content .list{
-	font-size: 1.4em;
-	line-height: 1em;
-	color: #8d8d8d;
-	margin: 14px 0;
-	overflow: hidden;
-}
-.m_itme .itme .content .list .icon{
-	padding: 0 4px 0 0;
-}
+.m_itme .itme .content{ }
+.m_itme .itme .content .list{ font-size: 1.4em; line-height: 1em; color: #8d8d8d; margin: 14px 0; overflow: hidden; }
+.m_itme .itme .content .list .icon{ padding: 0 4px 0 0; }
 
 .m_itme .itme .content .list .time,
 .m_itme .itme .content .list .kilometre,
@@ -394,7 +367,6 @@ html.h body .footer{
 
 .m_itme .itme .content .last{ margin: 20px 0 10px 0; }
 .m_itme .itme .content .list:last-child{ margin: 20px 0 10px 0; }
-
 
 .m_itme .itme .content .list .u_btn{ color: #fff; }
 .m_itme .itme .content .list .u_btn:visited{ color: #fff; }
@@ -457,31 +429,10 @@ html.h body .footer{
 
 
 /* 列表 4S */
-.m_itme_4s{
-    
-}
-.m_itme_4s .itme{
-	overflow: hidden;
-	position: relative;
-	border-bottom: 1px solid #c4c4c4;
-	margin: 0 0 0px 0;
-    padding-bottom: 10px;
-/*	padding-top:20px;*/
-}
-
-.m_itme_4s .itme .itme_head{
-    background: #e7e7e7;
-    color: #8d8d8d;
-    font-size:1.4em;
-    line-height: 2.4em;
-    overflow: hidden;
-}
-
-.m_itme_4s .itme .itme_head .icon{
-	padding: 0 4px 0 0;
-    font-size: 1em;
-    line-height: 1em;
-}
+.m_itme_4s{ }
+.m_itme_4s .itme{ overflow: hidden; position: relative; border-bottom: 1px solid #c4c4c4; margin: 0 0 0px 0; padding-bottom: 10px; }
+.m_itme_4s .itme .itme_head{ background: #e7e7e7; color: #8d8d8d; font-size:1.4em; line-height: 2.4em; overflow: hidden; }
+.m_itme_4s .itme .itme_head .icon{ padding: 0 4px 0 0; font-size: 1em; line-height: 1em; }
 
 
 
@@ -491,39 +442,16 @@ html.h body .footer{
 .m_itme_4s .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding-top: 10px; }
 
 /* 参数 */
-.m_itme_4s .itme .content{
-
-}
-.m_itme_4s .itme .content .list{
-	font-size: 1.4em;
-	line-height: 1em;
-	color: #8d8d8d;
-	margin: 14px 0;
-	overflow: hidden;
-}
-.m_itme_4s .itme .content .list .icon{
-	padding: 0 4px 0 0;
-}
+.m_itme_4s .itme .content{ }
+.m_itme_4s .itme .content .list{ font-size: 1.4em; line-height: 1em; color: #8d8d8d; margin: 14px 0; overflow: hidden; }
+.m_itme_4s .itme .content .list .icon{ padding: 0 4px 0 0; }
 
 /* 按钮 */
-.m_itme_4s .itme .content .btn_wrap{
-    margin: 30px auto;
-}
-
-.m_itme_4s .itme .content .btn_wrap .span{
-    float: right;
-}
-.m_itme_4s .itme .content .btn_wrap .span .padding_lr{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.m_itme_4s .itme .content .info{
-	
-}
-.m_itme_4s .itme .content .info b{
-	color: #ff4e00;
-}
+.m_itme_4s .itme .content .btn_wrap{ margin: 30px auto; }
+.m_itme_4s .itme .content .btn_wrap .span{ float: right; }
+.m_itme_4s .itme .content .btn_wrap .span .padding_lr{ padding-left: 5px; padding-right: 5px; }
+.m_itme_4s .itme .content .info{ }
+.m_itme_4s .itme .content .info b{ color: #ff4e00; }
 
 
 /* 针对单个icon */
@@ -539,9 +467,7 @@ html.h body .footer{
 .m_itme_4s .itme .content .kilometre,
 .m_itme_4s .itme .content .price,
 .m_itme_4s .itme .content .preview .price,
-.m_itme_4s .itme .content .preview .auction_succeed{
-    height: 16px; line-height: 16px; overflow: hidden;vertical-align: top;
-}
+.m_itme_4s .itme .content .preview .auction_succeed{ height: 16px; line-height: 16px; overflow: hidden; vertical-align: top; }
 
 .m_itme_4s .itme .content .kilometre{ }
 .m_itme_4s .itme .content .kilometre .icon{ font-size: 1.2em;  line-height: 0.9em; }
@@ -573,12 +499,6 @@ html.h body .footer{
 .e_itme_2_col_1{ }
 .e_itme_2_col_1 .content { }
 .e_itme_2_col_1 .content .itme .link{ padding:0 0 0 10px; }
-
-
-
-
-
-
 
 
 
@@ -616,6 +536,76 @@ html.h body .footer{
 .m_login .itme .input:focus{ }
 .m_login .itme .input:focus+.hint{ display: none; }
 
+
+/* 搜索 */
+.m_search{
+    height: 40px;
+    line-height: 40px;
+    color: #8d8d8d;
+    position: relative;
+}
+.m_search .search_wrap{
+    margin: 5px 0;
+    padding: 0px 70px 0px 40px;
+    border-bottom: 1px solid #c4c4c4;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+}
+
+.m_search .icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    
+    width: 30px;
+    height: 30px;
+    font-size: 1.6em;
+    line-height: 30px;
+    text-align: center;
+}
+
+.m_search .input{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 0 -80px 0 0;
+    font-size: 1.4em;
+    line-height: 20px;
+    color: #8d8d8d;
+    
+}
+.m_search .hint{
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.4em;
+}
+.m_search .input:hover{
+
+}
+.m_search .input:hover + .hint{
+    display: none;
+}
+
+.m_search .btn{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 60px;
+    padding: 4px 0;
+    line-height: 16px;
+    font-size: 1.4em;
+    
+/*
+    height: 26px;
+    line-height: 26px;
+*/
+}
 
 
 

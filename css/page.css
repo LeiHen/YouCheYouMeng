@@ -35,7 +35,6 @@
 .retrieve_password{
     
 }
-
 .retrieve_password .rpsw{
     margin: 40px auto;
 }
@@ -47,6 +46,19 @@
     line-height: 2em;
     border-radius: 2em;
 }
+
+/* 找回密码 详细 */
+.retrieve_password_detail{
+    
+}
+.retrieve_password_detail .rpsw{
+     margin: 40px auto;
+}
+
+
+
+
+
 
 
 /* 全部地区 */
@@ -70,7 +82,8 @@
 .nav_manage .itme .link,
 .nav_manage .itme .link .img_wrap,
 .nav_manage .itme .link .img_wrap .img,
-.nav_manage .itme .link .title{
+.nav_manage .itme .link .title,
+.nav_sub .more:hover > .link{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
