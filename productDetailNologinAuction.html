@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		
+
+		<meta name="Keywords" content="">
+		<meta name="description" content="">
+		
+		<!-- 避免IE使用兼容模式 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- 启用360浏览器的极速模式(webkit)-->
+        <meta name="renderer" content="webkit">
+        
+		
+		<!-- mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" />
+		<link rel="bookmark" href="favicon.ico" />
+		
+		<title>优车优盟</title>
+		<!--[if lt IE 9 ]>
+            <script src="js/hack/html5shiv.js"></script>
+        <![endif]-->
+
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/page.css">
+		<link rel="stylesheet" href="css/font.css">
+		<link rel="stylesheet" href="css/responsive.css">		
+	</head>
+	<body>
+
+		<!-- 头部 [[ -->
+		<header class="header">
+            <div class="padding_lr">
+                <a class="wrap_logo" href="index.html" alt="返回首页" ><img src="images/logolong.png" alt="" class="logo" alt="优车优盟"></a>
+                <a class="location" href="place.html" ><span class="icon icon_location"></span>广州</a>
+                <a class="member" href="login.html"><span class="icon icon_profile"></span>会员专区</a>
+		    </div>
+		</header>
+		<!-- 头部 ]] -->
+       
+        
+        <!-- 主要 [[ -->
+        <div class="main">
+            
+            <div class="m_product_detail">
+                    
+                <div id='mySwipe' class='m_banner swipe'>
+                    <div class='content swipe-wrap'>
+                        <div class="itme"><img src="images/listCar/car/img_1_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_2_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_3_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_4_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_5_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_6_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_7_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_8_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_9_640x360@2x.jpg"></div>
+                        <div class="itme"><img src="images/listCar/car/img_10_640x360@2x.jpg"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="padding_lr">
+                <a href="#" class="u_btn e_btn_gray w_per100 more"><div class="p">更多</div></a>
+            </div>
+            
+            
+        </div>
+        <!-- 主要 ]] -->
+        
+        
+        <!-- 热线 [[ -->
+        <a href="tel:" class="hotline"></a>
+        <!-- 热线 [[ -->
+        
+        
+        <!-- 底部 [[ -->
+        <footer class="footer">
+            <nav class="nav_bottom">
+                <a href="index.html" class="link">首页</a>
+                <a href="login.html" class="link">询价</a>
+                <a href="login.html" class="link">拍卖</a>
+                <a href="login.html" class="link">个人</a>
+            </nav>
+            <div class="copy">
+                <a href="#" class="link">&nbsp;电脑版</a>
+                <a href="index.html" class="link">&nbsp;触屏版</a>
+                <p>copyright 2015 &copy; 优车优盟</p>
+            </div>
+        </footer>
+        <!-- 底部 ]] -->
+      
+<!--        <script src="js/lib/jquery.1.10.2.min.js"></script>-->
+        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+        
+        
+        <script src="js/base.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/page.js"></script>
+        
+		
+		<script src="js/lib/swipe.js"></script>
+       
+        
+        <!-- 当前页面调用函数 -->
+        <script type="text/javascript">	
+			//初始化 统一入口
+			function init(){
+                
+                //调用 banner
+                // pure JS
+                var elem = document.getElementById('mySwipe');
+                window.mySwipe = Swipe(elem, {
+//                   startSlide: 4,
+                   auto: 1000
+//                   continuous: true,
+//                   disableScroll: true,
+                  // stopPropagation: true,
+                  // callback: function(index, element) {},
+                  // transitionEnd: function(index, element) {}
+                });
+
+                // with jQuery
+                // window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+			}
+			init();
+            
+            
+            
+		</script>
+       
+       
+        
+	</body>
+</html>

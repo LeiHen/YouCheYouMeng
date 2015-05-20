@@ -1,0 +1,109 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Swipe 2</title>
+
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+
+<style>
+
+/* Swipe 2 required styles */
+
+/*.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.swipe-wrap > div img{
+
+  width:100%;
+  display: block;
+}*/
+
+
+
+
+.m_banner{
+  overflow: hidden;
+  position: relative;
+}
+.m_banner .content{
+  overflow: hidden;
+  position: relative;
+}
+
+.m_banner .content > .itme{
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.m_banner .content > .itme img{
+  width: 100%;
+  display: block;
+}
+
+
+
+
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+
+<div id='mySwipe' style='' class='m_banner swipe'>
+  <div class='content swipe-wrap'>
+    <div class="itme"><img src="../images/listCar/car/img_1_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_2_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_3_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_4_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_5_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_6_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_7_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_8_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_9_640x360@2x.jpg"></div>
+    <div class="itme"><img src="../images/listCar/car/img_10_640x360@2x.jpg"></div>
+  </div>
+</div>
+
+
+<!-- 
+<div style='text-align:center;padding-top:20px;'>
+  
+  <button onclick='mySwipe.prev()'>prev</button> 
+  <button onclick='mySwipe.next()'>next</button>
+
+</div> -->
+
+
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script src='swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+</script>

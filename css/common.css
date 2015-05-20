@@ -516,6 +516,13 @@ html.h body .footer{
 
 
 
+/* 产品 详细 */
+.m_product_detail{
+    
+}
+
+
+
 /* 登陆 */
 .m_login{ padding: 30px auto; color: #8d8d8d; }
 .m_login .itme{ position: relative; border: 1px solid #c4c4c4; border-radius: 4px; font-size: 1.6em; line-height: 2em; padding: 0 0 0 60px; margin: 20px auto; }
@@ -538,78 +545,36 @@ html.h body .footer{
 
 
 /* 搜索 */
-.m_search{
-    height: 40px;
-    line-height: 40px;
-    color: #8d8d8d;
+.m_search{ height: 40px; line-height: 40px; color: #8d8d8d; position: relative; }
+.m_search .search_wrap{ margin: 5px 0; padding: 0px 70px 0px 40px; border-bottom: 1px solid #c4c4c4; overflow: hidden; position: relative; height: 30px; }
+.m_search .icon{ position: absolute; left: 0; top: 0; display: block; width: 30px; height: 30px; font-size: 1.6em; line-height: 30px; text-align: center; }
+.m_search .input{ position: relative; display: block; width: 100%; height: 30px; margin: 0 -80px 0 0; font-size: 1.4em; line-height: 20px; color: #8d8d8d; }
+.m_search .hint{ position: absolute; top: 0px; left: 40px; height: 30px; line-height: 30px; font-size: 1.4em; }
+.m_search .input:hover{ }
+.m_search .input:hover + .hint{ display: none; }
+.m_search .btn{ position: absolute; top: 0; right: 0px; width: 60px; padding: 4px 0; line-height: 16px; font-size: 1.4em; }
+
+/* banner */
+.m_banner{
+    overflow: hidden;
+    visibility: hidden;
     position: relative;
 }
-.m_search .search_wrap{
-    margin: 5px 0;
-    padding: 0px 70px 0px 40px;
-    border-bottom: 1px solid #c4c4c4;
+.m_banner .content{
     overflow: hidden;
     position: relative;
-    height: 30px;
 }
 
-.m_search .icon{
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: block;
-    
-    width: 30px;
-    height: 30px;
-    font-size: 1.6em;
-    line-height: 30px;
-    text-align: center;
+.m_banner .content > .itme{
+  float:left;
+  width:100%;
+  position: relative;
 }
 
-.m_search .input{
-    position: relative;
-    display: block;
+.m_banner .content > .itme img{
     width: 100%;
-    height: 30px;
-    margin: 0 -80px 0 0;
-    font-size: 1.4em;
-    line-height: 20px;
-    color: #8d8d8d;
-    
+    display: block;
 }
-.m_search .hint{
-    position: absolute;
-    top: 0px;
-    left: 40px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 1.4em;
-}
-.m_search .input:hover{
-
-}
-.m_search .input:hover + .hint{
-    display: none;
-}
-
-.m_search .btn{
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 60px;
-    padding: 4px 0;
-    line-height: 16px;
-    font-size: 1.4em;
-    
-/*
-    height: 26px;
-    line-height: 26px;
-*/
-}
-
-
-
-
 
 /*
 	功能
@@ -620,6 +585,10 @@ html.h body .footer{
 /*
 	状态
 */
+
+
+
+
 
 
 
