@@ -142,12 +142,15 @@ html.h body .footer{
 
 .nav_main .itme .link:hover,
 .nav_main .itme .hover{ background: #ff4e00; }
+
 .nav_main .itme .link:hover .triangle,
 .nav_main .itme .hover .triangle{ display: block; border-color: #ff4e00 transparent transparent transparent; }
 
 .nav_main .itme .link:active{ background: #dc4300; }
 .nav_main .itme .link:active .triangle{ display: block; border-color: #dc4300 transparent transparent transparent; }
 
+.nav_main .itme .link:hover .none,
+.nav_main .itme .link:active .none,
 .nav_main .itme .link .none{display:none;}
 
 /* nav sub */
@@ -428,58 +431,61 @@ html.h body .footer{
 .m_itme .failed_match{ }
 
 
-/* 列表 4S */
-.m_itme_4s{ }
-.m_itme_4s .itme{ overflow: hidden; position: relative; border-bottom: 1px solid #c4c4c4; margin: 0 0 0px 0; padding-bottom: 10px; }
-.m_itme_4s .itme .itme_head{ background: #e7e7e7; color: #8d8d8d; font-size:1.4em; line-height: 2.4em; overflow: hidden; }
-.m_itme_4s .itme .itme_head .icon{ padding: 0 4px 0 0; font-size: 1em; line-height: 1em; }
-
+/* 列表 4S car */
+.m_itme_4s_car{ }
+.m_itme_4s_car .itme{ overflow: hidden; position: relative; border-bottom: 1px solid #c4c4c4; margin: 0 0 0px 0; padding-bottom: 10px; }
+.m_itme_4s_car .itme .itme_head{ background: #e7e7e7; color: #8d8d8d; font-size:1.4em; line-height: 2.4em; overflow: hidden; }
+.m_itme_4s_car .itme .itme_head .icon{ padding: 0 4px 0 0; font-size: 1em; line-height: 1em; }
+.m_itme_4s_car .itme .itme_head .name4s{ 
+    float: right;
+    margin: 0 20px 0 0;
+}
 
 
 /* 封面 */
-.m_itme_4s .itme .cover{ width: 100%; display: block; }
-.m_itme_4s .itme .cover .img{ max-width: 100%; width:100%; display: block; min-height: 169px; }
-.m_itme_4s .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding-top: 10px; }
+.m_itme_4s_car .itme .cover{ width: 100%; display: block; }
+.m_itme_4s_car .itme .cover .img{ max-width: 100%; width:100%; display: block; min-height: 169px; }
+.m_itme_4s_car .itme .cover .title{ font-size: 1.6em; line-height: 1.2em; color: #009842; padding-top: 10px; }
 
 /* 参数 */
-.m_itme_4s .itme .content{ }
-.m_itme_4s .itme .content .list{ font-size: 1.4em; line-height: 1em; color: #8d8d8d; margin: 14px 0; overflow: hidden; }
-.m_itme_4s .itme .content .list .icon{ padding: 0 4px 0 0; }
+.m_itme_4s_car .itme .content{ }
+.m_itme_4s_car .itme .content .list{ font-size: 1.4em; line-height: 1em; color: #8d8d8d; margin: 14px 0; overflow: hidden; }
+.m_itme_4s_car .itme .content .list .icon{ padding: 0 4px 0 0; }
 
 /* 按钮 */
-.m_itme_4s .itme .content .btn_wrap{ margin: 30px auto; }
-.m_itme_4s .itme .content .btn_wrap .span{ float: right; }
-.m_itme_4s .itme .content .btn_wrap .span .padding_lr{ padding-left: 5px; padding-right: 5px; }
-.m_itme_4s .itme .content .info{ }
-.m_itme_4s .itme .content .info b{ color: #ff4e00; }
+.m_itme_4s_car .itme .content .btn_wrap{ margin: 30px auto; }
+.m_itme_4s_car .itme .content .btn_wrap .span{ float: right; }
+.m_itme_4s_car .itme .content .btn_wrap .span .padding_lr{ padding-left: 5px; padding-right: 5px; }
+.m_itme_4s_car .itme .content .info{ }
+.m_itme_4s_car .itme .content .info b{ color: #ff4e00; }
 
 
 /* 针对单个icon */
-.m_itme_4s .itme .itme_head .time,
-.m_itme_4s .itme .itme_head .state{ height: 32px; overflow: hidden; vertical-align: top; }
+.m_itme_4s_car .itme .itme_head .time,
+.m_itme_4s_car .itme .itme_head .state{ height: 32px; overflow: hidden; vertical-align: top; }
 
-.m_itme_4s .itme .itme_head .time{ }
-.m_itme_4s .itme .itme_head .time .icon{ font-size: 1em; line-height: 32px; }
+.m_itme_4s_car .itme .itme_head .time{ }
+.m_itme_4s_car .itme .itme_head .time .icon{ font-size: 1em; line-height: 32px; }
 
-.m_itme_4s .itme .itme_head .state{ float: right; }
-.m_itme_4s .itme .itme_head .state .icon{ font-size: 1.1em; line-height: 34px; }
+.m_itme_4s_car .itme .itme_head .state{ float: right;width:78px;display: block; }
+.m_itme_4s_car .itme .itme_head .state .icon{ font-size: 1.1em; line-height: 34px; }
 
-.m_itme_4s .itme .content .kilometre,
-.m_itme_4s .itme .content .price,
-.m_itme_4s .itme .content .preview .price,
-.m_itme_4s .itme .content .preview .auction_succeed{ height: 16px; line-height: 16px; overflow: hidden; vertical-align: top; }
+.m_itme_4s_car .itme .content .kilometre,
+.m_itme_4s_car .itme .content .price,
+.m_itme_4s_car .itme .content .preview .price,
+.m_itme_4s_car .itme .content .preview .auction_succeed{ height: 16px; line-height: 16px; overflow: hidden; vertical-align: top; }
 
-.m_itme_4s .itme .content .kilometre{ }
-.m_itme_4s .itme .content .kilometre .icon{ font-size: 1.2em;  line-height: 0.9em; }
+.m_itme_4s_car .itme .content .kilometre{ }
+.m_itme_4s_car .itme .content .kilometre .icon{ font-size: 1.2em;  line-height: 0.9em; }
 
-.m_itme_4s .itme .content .price{ }
-.m_itme_4s .itme .content .price .icon{ font-size:  1.15em;  line-height: 0.9em;}
+.m_itme_4s_car .itme .content .price{ }
+.m_itme_4s_car .itme .content .price .icon{ font-size:  1.15em;  line-height: 0.9em;}
 
-.m_itme_4s .itme .content .preview .price{}
-.m_itme_4s .itme .content .preview .price .icon{ font-size: 1.1em; line-height: 1.4em;}
+.m_itme_4s_car .itme .content .preview .price{}
+.m_itme_4s_car .itme .content .preview .price .icon{ font-size: 1.1em; line-height: 1.4em;}
 
-.m_itme_4s .itme .content .preview .auction_succeed .price{}
-.m_itme_4s .itme .content .preview .auction_succeed .price .icon{ font-size: 1.4em; line-height: 0.8em;}
+.m_itme_4s_car .itme .content .preview .auction_succeed .price{}
+.m_itme_4s_car .itme .content .preview .auction_succeed .price .icon{ font-size: 1.4em; line-height: 0.8em;}
 
 
 /* 列表2 */
@@ -520,6 +526,12 @@ html.h body .footer{
 .m_product_detail{
     
 }
+.m_product_detail .m_banner{
+    
+}
+
+
+
 
 
 
@@ -557,7 +569,7 @@ html.h body .footer{
 /* banner */
 .m_banner{
     overflow: hidden;
-    visibility: hidden;
+/*    visibility: hidden;*/
     position: relative;
 }
 .m_banner .content{
