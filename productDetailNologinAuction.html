@@ -18,6 +18,8 @@
 		<!-- mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
+		<meta name="format-detection" content="telephone=no"/>
+		
 		<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" />
 		<link rel="bookmark" href="favicon.ico" />
 		
@@ -37,7 +39,7 @@
 		<!-- 头部 [[ -->
 		<header class="header">
             <div class="padding_lr">
-                <a class="wrap_logo" href="index.html" alt="返回首页" ><img src="images/logolong.png" alt="" class="logo" alt="优车优盟"></a>
+                <a class="wrap_logo" href="index.html" alt="返回首页" ><img src="images/logolong.png" class="logo" alt="优车优盟"></a>
                 <a class="location" href="place.html" ><span class="icon icon_location"></span>广州</a>
                 <a class="member" href="login.html"><span class="icon icon_profile"></span>会员专区</a>
 		    </div>
@@ -51,8 +53,8 @@
             <div class="m_product_detail">
                 
                 <!-- banner [[ -->
-                <div id='mySwipe' class='m_banner'>
-                    <div class='content swipe-wrap'>
+                <div id="mySwipe" class="m_banner">
+                    <div class="content swipe-wrap">
                         <div class="itme"><img src="images/listCar/car/img_1_640x360@2x.jpg"></div>
                         <div class="itme"><img src="images/listCar/car/img_2_640x360@2x.jpg"></div>
                         <div class="itme"><img src="images/listCar/car/img_3_640x360@2x.jpg"></div>
@@ -69,50 +71,68 @@
                 
                 
                 <!-- 标题 [[ -->
-                <h1 class="title">传祺GS5 2013款 (1.8T) 自动四驱豪动</h1>
+                <div class="head padding">
+                    <h1 class="title">传祺GS5 2013款 (1.8T) 自动四驱豪动</h1>
                 
-                <p class="date_km">
-                    <time class="produced_date">2014年12月8日</time>
-                    <span class="km">3.6万公里</span>
-                </p>
-                <p class="vin">VIN:</p>
+                    <p class="date_km">
+                        <time class="produced_date">14年12月8日</time>
+                        <span class="km">3.6万公里</span>
+                    </p>
+                    <p class="vin">VIN:1011011200141208</p>
+                </div>
+                
                 <!-- 标题 ]] -->
                 
                 
                 <!-- 功能区域 [[ -->
                 <div class="product_function">
-                    
+                    <div class="info">
+                        
+                    </div>
+                    <div class="function g_col_3">
+                        <span class="span">
+                            <div class="padding_lr">
+                                <a href="enquiryWatch.html" class="u_btn w_per100">
+                                    <div class="p">参与询价</div>
+                                </a>
+                            </div>
+                        </span>
+                    </div>
                 </div>
                 <!-- 功能区域 ]] -->
                 
                 <!-- 分享 [[ -->
-                <div class="m_share">
-                    
+                <div class="padding m_share">
+                    分享：
+                    <a href="#" class="link" alt="分享到微博" title="分享到微博"><span class="icon icon_weibo"></span></a>
+                    <a href="#" class="link" alt="分享到微信" title="分享到微信"><span class="icon icon_wechat"></span></a>
+                    <a href="#" class="link" alt="分享到QQ" title="分享到QQ"><span class="icon icon_qq"></span></a>
+                    <a href="#" class="link" alt="更多" title="更多"><span class="icon icon_dots_three_horizontal"></span></a>
                 </div>
                 <!-- 分享 ]] -->
                 
-                <ul class="m_">
-                    <li class="itme">
+                <ul class="m_itme_3">
+                    <li class="itme padding_lr">
                         基本信息
                         <span class="icon icon_chevron_right"></span> 
                     </li>
                     
-                    <li class="itme">
+                    <li class="itme padding_lr">
                         配置信息
                         <span class="icon icon_chevron_right"></span> 
                     </li>
 
-                    <li class="itme">
+                    <li class="itme padding_lr">
                         轮胎检查
                         <span class="icon icon_chevron_right"></span> 
                     </li>
                     
-                    <li class="itme">
+                    <li class="itme padding_lr">
                         手续信息
                         <span class="icon icon_chevron_right"></span> 
                     </li>
                     
-                    <li class="itme">
+                    <li class="itme padding_lr">
                         车辆相片
                         <span class="icon icon_chevron_right"></span> 
                     </li>
@@ -120,11 +140,16 @@
                 
                 
                 <!-- 基本信息 [[ -->
-                <dl class="itme_detail m_itme_3">
+                <dl class="itme_detail m_itme_4">
                     <dt class="title_mian">
                         <span class="icon icon_return"></span>
                         <span class="title">基本信息</span>
                     </dt>
+                    <dd class="hint padding">
+                        <span class="icon icon_circle_check"></span>代表“有”&nbsp;
+                        <span class="icon icon_circle_cross"></span>代表“没有”&nbsp;
+                        <span class="icon icon_error"></span>代表“未填"&nbsp;
+                    </dd>
                     <dd class="itme">
                         <span class="title">品牌</span>
                         别克
@@ -216,7 +241,7 @@
                     </dd>
                     <dd class="itme">
                         <span class="title">备用钥匙</span>
-                        有
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                    
                 </dl>
@@ -225,113 +250,142 @@
                 
                 
                 <!-- 配置信息 [[ -->
-                <dl class="itme_detail m_itme_3">
+                <dl class="itme_detail m_itme_4">
                     <dt class="title_mian">
                         <span class="icon icon_return"></span>
                         <span class="title">配置信息</span>
                     </dt>
                     
+                    <dd class="hint padding">
+                        <span class="icon icon_circle_check"></span>代表“有”&nbsp;
+                        <span class="icon icon_circle_cross"></span>代表“没有”&nbsp;
+                        <span class="icon icon_error"></span>代表“未填"&nbsp;
+                    </dd>
+                    
                     <dd class="itme">
                         <span class="title">行车记录器</span>
-                        别克
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">卫星导航</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">自动倒车</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">定速巡航</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">电动后视镜</span>
-                        君威
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">倒车显影</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
 
                     <dd class="itme">
                         <span class="title">动力转向</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">智能钥匙</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
 
                     <dd class="itme">
                         <span class="title">车身铭牌</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
     
                     <dd class="itme">
                         <span class="title">铝合金轮毂</span>
-                        未填
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">铝圈</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">倒车雷达</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">电动门数</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">电动座椅</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">空调口数</span>
+                        4个
                     </dd>
 
                     <dd class="itme">
                         <span class="title">液晶屏幕数</span>
+                        1个
                         
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">气囊数</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">防盗器</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     
 
                     <dd class="itme">
                         <span class="title">天窗</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">皮椅</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     
                     
                     <dd class="itme">
                         <span class="title">音响主机</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">DVD</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">CD</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">MP3</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
 
                     <dd class="itme">
                         <span class="title">ABS</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">TV</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     
@@ -342,11 +396,18 @@
                 
                 
                 <!-- 轮胎检查 [[ -->
-                <dl class="itme_detail m_itme_3">
+                <dl class="itme_detail m_itme_4">
                     <dt class="title_mian">
                         <span class="icon icon_return"></span>
                         <span class="title">轮胎检查</span>
                     </dt>
+                    
+                    <dd class="hint padding">
+                        <span class="icon icon_circle_check"></span>代表“有”&nbsp;
+                        <span class="icon icon_circle_cross"></span>代表“没有”&nbsp;
+                        <span class="icon icon_error"></span>代表“未填"&nbsp;
+                    </dd>
+                    
                     <dd class="itme">
                         <span class="title">左前轮胎</span>
                         小于1.6mm
@@ -369,53 +430,66 @@
                 
                 
                 <!-- 手续信息 [[ -->
-                <dl class="itme_detail m_itme_3">
+                <dl class="itme_detail m_itme_4">
                     <dt class="title_mian">
                         <span class="icon icon_return"></span>
                         <span class="title">手续信息</span>
                     </dt>
+                    
+                    <dd class="hint padding">
+                        <span class="icon icon_circle_check"></span>代表“有”&nbsp;
+                        <span class="icon icon_circle_cross"></span>代表“没有”&nbsp;
+                        <span class="icon icon_error"></span>代表“未填"&nbsp;
+                    </dd>
+                    
                     <dd class="itme">
                         <span class="title">购置税证书</span>
-                        别克
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">新车发票</span>
-                        君威
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">新车发票</span>
-                        未填
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">机动车登记证书</span>
-                        
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     
                     <dd class="itme">
                         <span class="title">第三张强制保险单</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">车船税票</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">商业保险</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
 
                     <dd class="itme">
                         <span class="title">过户次数</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">未处理违章记录</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>
                     <dd class="itme">
                         <span class="title">是否查封抵押</span>
+                        <span class="icon icon_circle_check"></span>
                     </dd>                    
                    
                 </dl>
                 <!-- 手续信息 ]] -->
                 
                 <!-- 车辆相片 [[ -->
-                <dl class="itme_detail m_itme_3">
+                <dl class="itme_detail m_itme_4 m_detail_img">
                     <dt class="title_mian">
                         <span class="icon icon_return"></span>
                         <span class="title">车辆相片</span>
@@ -423,43 +497,43 @@
                     
                     <dd class="itme">
                         <img src="images/listCar/car/img_1_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">车辆左前</h3>
+                        <h3 class="title_img padding_lr">车辆左前</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_2_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">车辆正前</h3>
+                        <h3 class="title_img padding_lr">车辆正前</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_3_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">车辆正后</h3>
+                        <h3 class="title_img padding_lr">车辆正后</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_4_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">车辆右后</h3>
+                        <h3 class="title_img padding_lr">车辆右后</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_5_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">前排座椅</h3>
+                        <h3 class="title_img padding_lr">前排座椅</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_6_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">后排座椅</h3>
+                        <h3 class="title_img padding_lr">后排座椅</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_7_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">中控台</h3>
+                        <h3 class="title_img padding_lr">中控台</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_8_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">仪表</h3>
+                        <h3 class="title_img padding_lr">仪表</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_9_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">仪表台操纵杆</h3>
+                        <h3 class="title_img padding_lr">仪表台操纵杆</h3>
                     </dd>
                     <dd class="itme">
                         <img src="images/listCar/car/img_10_640x360@2x.jpg" alt="" class="img">
-                        <h3 class="title_img">发动机舱</h3>
+                        <h3 class="title_img padding_lr">发动机舱</h3>
                     </dd>
                     
                     <dd class="itme">
@@ -510,37 +584,38 @@
             
             
             <div class="m_comment">
-                <h2 class="title">评论</h2>
+                <h2 class="u_title padding_lr">评论</h2>
                 
-                
-<!--
-                <div comment_id="3844235520218369" class="list_li S_line1 clearfix">
-         <div class="WB_face W_fl">
-            <a target="_blank" href="/2904580202"><img width="30" height="30" alt="謬謬酱喜欢牙齿晒太阳" src="http://tp3.sinaimg.cn/2904580202/50/5722152786/0" usercard="id=2904580202" ucardconf="type=1"></a>
-        </div>
-        <div class="list_con" node-type="replywrap">
-            <div class="WB_text">
-            <a target="_blank" href="/2904580202" usercard="id=2904580202" ucardconf="type=1">謬謬酱喜欢牙齿晒太阳</a>：回复<a target="_blank" render="ext" extra-data="type=atname" href="http://weibo.com/n/%E8%9C%A1%E7%AC%94%E5%85%88%E7%94%9F%E7%88%B1%E4%B8%8A%E4%B8%B8%E5%AD%90%E5%B0%8F%E5%A7%90?from=feed&amp;loc=at" usercard="name=蜡笔先生爱上丸子小姐">@蜡笔先生爱上丸子小姐</a>:我不是豬好嗎。。。還有 我兩年前就有這種感覺了<img src="http://img.t.sinajs.cn/t4/appstyle/expression/emimage/ee9081.png" width="20px" height="20px"> </div>
-                                    <div class="WB_expand_media_box" style="display: none;" node-type="comment_media_disp"></div>
-                        <div class="WB_func clearfix">
-                <div class="WB_handle W_fr">
-                <ul class="clearfix">
-                                        <li class="hover"><span class="line S_line1"><a class="S_txt1" href="javascript:void(0);" onclick="javascript:window.open('http://service.account.weibo.com/reportspam?rid=3844235520218369&amp;type=2&amp;url=&amp;bottomnav=1&amp;wvr=6', 'newwindow', 'height=700, width=550, toolbar =yes, menubar=no, scrollbars=yes, resizable=yes, location=no, status=no');">举报</a></span></li>
-                                                                                    <li><span class="line S_line1"><a class="S_txt1" href="javascript:void(0);" action-data="cid=3844235520218369&amp;is_more=1&amp;type=small&amp;ouid=2609185775" action-type="commentDialogue" suda-data="key=comment&amp;value=big_comment_dialog">查看对话</a></span></li>
-                                        <li class=" ">
-                        <span class="line S_line1"><a href="javascript:void(0);" class="S_txt1 " onclick="return false" action-type="reply" action-data="ouid=2904580202&amp;cid=3844235520218369&amp;nick=謬謬酱喜欢牙齿晒太阳&amp;ispower=1&amp;status_owner_user=2609185775&amp;area=2&amp;canUploadImage=1" title="">回复</a></span>
-                        <span class="arrow"><span class="W_arrow_bor W_arrow_bor_t"><i class="S_bg2_br"></i></span></span>
+                <ul class="itme_ul">
+                    <li class="itme">
+                        <img src="" alt="" class="face">
+                        <div class="text">买车的老李：还能在打折么？</div>
+                        <div class="func">
+                            <time class="time"></time>
+                            <span class="comment_btn"></span>
+                        </div>
+                        <div class="revert">
+                            
+                        </div>
                     </li>
-                    <li><span class="line S_line1">
-                                            <a href="javascript:void(0)" class="S_txt1" action-type="fl_like" action-data="object_id=3844235520218369&amp;object_type=comment" title="赞"><span node-type="like_status"><i class="W_icon icon_praised_b"></i><em></em></span></a>
-                                        </span></li>
-                    </ul>
+                </ul>
+                
+                <div class="WB_feed_publish clearfix">
+                   
+                    <div class="WB_publish">
+                        <div class="p_input">
+                            <textarea node-type="textEl" class="W_input" style=""></textarea>
+                        </div>
+                        
+                        <div class="p_opt clearfix">
+                            <div class="btn W_fr"><a node-type="btnText" action-type="doReply" href="javascript:;" class="W_btn_a W_btn_a_disable">评论</a></div>
+                            
+                        </div>
+                        
+                    </div>
+                    
                 </div>
-                <div class="WB_from S_txt2">5月19日 15:30 </div>
-            </div>
-        <div node-type="commentwrap" class="WB_repeat_in S_bg2" style="display: none;"><div class="WB_feed_publish clearfix"><div class="WB_publish"> <div class="p_input"><textarea node-type="textEl" class="W_input" style="margin: 0px; padding: 5px 3px 0px 6px; border-style: solid; border-width: 1px; font-size: 12px; word-wrap: break-word; line-height: 18px; overflow: hidden; outline: none; height: 23px;" range="14&amp;0"></textarea></div><div class="p_opt clearfix"> <div class="btn W_fr"><a node-type="btnText" action-type="doReply" href="javascript:;" class="W_btn_a W_btn_a_disable" action-data="ouid=2904580202&amp;cid=3844235520218369&amp;nick=謬謬酱喜欢牙齿晒太阳&amp;ispower=1&amp;status_owner_user=2609185775&amp;area=2&amp;canUploadImage=1&amp;mid=3827564793619993&amp;content=謬謬酱喜欢牙齿晒太阳&amp;module=scommlist&amp;dissDataFromFeed=[object Object]">评论</a></div> <div node-type="widget" class="opt clearfix"><span class="ico"><a node-type="smileyBtn" href="javascript:void(0);"><i class="W_ficon ficon_face">o</i></a></span><span class="ico"><a node-type="imgBtn" href="javascript:void(0);" style="position: relative;"><i class="W_ficon ficon_image">p</i><div style="position: absolute; left: 0px; top: 0px; display: block; overflow: hidden; background-color: rgb(0, 0, 0); opacity: 0; width: 20px; height: 20px;"><object type="application/x-shockwave-flash" data="http://js.t.sinajs.cn/t6/home/static/swf/MultiFilesUpload.swf?version=02f5eadd27f81f2a" width="20" height="20" id="swf_upbtn_143235589236941" style="visibility: visible;"><param name="menu" value="false"><param name="scale" value="noScale"><param name="allowFullscreen" value="false"><param name="allowScriptAccess" value="always"><param name="bgcolor" value="#FFFFFF"><param name="wmode" value="opaque"><param name="flashvars" value="swfid=swf_upbtn_143235589236941&amp;uploadAPIs=http%3A%2F%2Fpicupload.service.weibo.com%2Finterface%2Fpic_upload.php%3Fapp%3Dminiblog%26data%3D1%26url%3D0%26markpos%3D1%26logo%3D%26nick%3D0%26marks%3D0%26url%3D0%26markpos%3D1%26logo%3D%26nick%3D0%26marks%3D0&amp;maxFileSize=20971520&amp;maxFileNum=1&amp;jsHandler=STK.fcb_143235589236940&amp;channel=swf_upbtn_143235589236941_channel&amp;areaInfo=0-0-20-20&amp;fExt=*.png;*.jpg;*.gif;*.jpeg;&amp;fExtDec=选择图片:*.jpg, *.jpeg, *.gif, *.png&amp;uid=2185355144"></object></div></a></span> <ul class="ipt"><li><label class="W_label" for="LAB_143235589236939"><input node-type="forward" name="" type="checkbox" value="" class="W_checkbox" id="LAB_143235589236939"><span>同时转发到我的微博</span></label></li> </ul></div></div></div></div></div></div>
-    </div>
--->
+            
                 
             </div>
             
