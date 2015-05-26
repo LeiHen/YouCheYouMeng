@@ -648,9 +648,23 @@ html.h body .footer{
 
 }
 .m_comment .itme{
+    padding:10px 10px 10px 60px;
+    position: relative;
+    background: red;
+    border-bottom: 1px solid #c4c4c4;
+
+    /*overflow: hidden;*/
+}
+.m_comment .itme .face{
+    display: block;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.m_comment .itme{
     
 }
-
 
 
 /*
