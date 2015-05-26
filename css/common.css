@@ -319,6 +319,7 @@ html.h body .footer{
     border: none;
     display: block;
     background: none;
+    outline: none;
 }
 
 
@@ -520,7 +521,7 @@ html.h body .footer{
 
 
 /* 列表 4 */
-.m_itme_4{ }
+.m_itme_4{/* display: none;*/}
 .m_itme_4 .title_mian{ display: block; height: 40px; color: #8d8d8d; font-size: 1.4em; line-height: 40px; background: #e7e7e7; padding: 0 10px; overflow: hidden; cursor: pointer; }
 .m_itme_4 .title_mian .icon{ width: 20px; display: inline-block; font-size: 1em; line-height: 40px; }
 .m_itme_4 .hint{ font-size: 1.2em; line-height: 1em; color: #8d8d8d; background: rgba(231, 231, 231, 0.6); }
@@ -564,17 +565,50 @@ html.h body .footer{
 .m_product_detail .head .title{ font-size: 1.428571428571429em; line-height: 1.2em; color: #009842; margin: 0 0 10px 0; }
 
 .m_product_detail .head .date_km,
-.m_product_detail .head .vin{ line-height: 1.428571428571429em; }
+.m_product_detail .head .vin{ line-height: 1.428571428571429em; overflow: hidden;}
+.m_product_detail .head .vin{
+    padding: 10px 0;
+}
+
 .m_product_detail .head .date_km{ }
-.m_product_detail .head .produced_date{ }
-.m_product_detail .head .km{ margin: 0 10px; }
+
+.m_product_detail .head .date_km{  }
+.m_product_detail .head .date_km .icon{padding: 0 4px 0 0;}
+
+.m_product_detail .head .km,
+.m_product_detail .head .vin{height: 16px; line-height: 16px; overflow: hidden;vertical-align: top;}
+
+.m_product_detail .head .produced_date{}
+.m_product_detail .head .produced_date .icon{ font-size: 1em; line-height: 0.9em; }
+
+.m_product_detail .head .km{ }
+.m_product_detail .head .km .icon{ font-size: 1em; line-height:1.2em; }
+
+
 .m_product_detail .head .vin{ }
+
+/* 评估报告 */
+.m_product_detail .assess{
+    text-align: right;
+    background: #e7e7e7;
+    border-bottom: 1px solid #c4c4c4;
+}
+.m_product_detail .assess .link{
+    color: #8d8d8d;
+    font-size: 1.4em;
+    display: inline-block;
+    line-height: 3em;
+}
+.m_product_detail .assess .icon{
+    
+}
+
 
 /* 产品功能区 */
 .m_product_detail .product_function{ }
 .m_product_detail .product_function .info{ }
 
-.m_product_detail .product_function .function{ overflow: hidden; }
+.m_product_detail .product_function .function{margin:20px auto; overflow: hidden; padding: 10px 0 0 0;}
 .m_product_detail .product_function .function .span{ float: right; font-size: 1.4em; }
 
 /* 产品 列表内容  */
@@ -637,34 +671,79 @@ html.h body .footer{
 
 
 /* 分享 */
-.m_share{ text-align: right; color: #8d8d8d; border-bottom: 1px solid #c4c4c4; font-size: 1.4em; }
+.m_share{ color: #8d8d8d; border-bottom: 1px solid #c4c4c4; font-size: 1.4em;position: relative;overflow: hidden;}
+.m_share .wrap{
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    margin-left: -40px;
+}
+.m_share .icon_share{
+    font-size: 1.428571428571429em; line-height: 1.6em;
+    margin-right: 30px;
+}
+
+.m_share .wrap:hover,
+.m_share .hover{
+    left: 40px;
+}
+.m_share .wrap:hover .icon_share,
+.m_share .hover .icon_share{
+    color:#ff4e00;
+}
+
 .m_share .link{ display: inline-block; padding: 0 6px; color: #8d8d8d; font-size: 1.428571428571429em; line-height: 1.6em; }
 .m_share .link:hover{ color: #ff4e00; }
 
 
 
 /* 评论 */
-.m_comment{
+.m_comment{ }
+.m_comment .itme{ padding:10px 10px 10px 60px; position: relative;border-bottom: 1px solid #c4c4c4; /*overflow: hidden; */}
+.m_comment .itme .face{ display: block; width: 40px; position: absolute; left: 10px; top: 10px; }
+.m_comment .itme .text{ padding:0 60px 0 0; position: relative; font-size: 1.4em; color: #8d8d8d; }
+.m_comment .itme .text .name{ color: #ff4e00; margin: 0 6px 0 0; font-size: 1.2em; }
+.m_comment .itme .text .sub_name{ font-size: 1.2em; }
+.m_comment .itme .text .txt{ line-height: 1.714285714285714em; }
+.m_comment .itme .text .txt_revert{ text-indent: 1em; }
 
-}
-.m_comment .itme{
-    padding:10px 10px 10px 60px;
-    position: relative;
-    background: red;
-    border-bottom: 1px solid #c4c4c4;
+.m_comment .itme .time,
+.m_comment .itme .comment_btn{ position: absolute; right: 0px; }
+.m_comment .itme .time{ top: 0px; }
+.m_comment .itme .comment_btn{ bottom: 0px; display: block; padding: 10px 0 0 20px; }
+.m_comment .itme .comment_btn:hover{ color: #ff4e00; }
 
-    /*overflow: hidden;*/
-}
-.m_comment .itme .face{
-    display: block;
-    width: 40px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-.m_comment .itme{
-    
-}
+.m_comment .itme .revert_area{ margin:10px -10px 0 -60px; padding:20px 10px; background: #e7e7e7; position: relative; }
+.m_comment .itme .revert_area .input{ position: relative; display: block; width: 98%; padding:4px; margin: 0 0 10px 0; background: #fff; border:1px solid transparent; font-size: 1.4em; line-height: 1.2em; word-wrap: break-word; color: #8d8d8d; overflow: hidden; outline: none; }
+
+.m_comment .itme .revert_area .input:focus{ border:1px solid #ff4e00; }
+
+.m_comment .itme .revert_area::before{ content:''; position:absolute; border-style: solid; border-width: 0px 5px 5px 5px; border-color: transparent transparent #e7e7e7 transparent; bottom: 100%; right: 18px; z-index: 1; }
+
+.m_comment .itme .revert_area .btn{ width: 33.333333%; font-size: 1.4em; }
+
+.m_comment .publish{ background: #e7e7e7; }
+.m_comment .publish .input{ position: relative; display: block; width: 98%; min-height: 59px; padding:4px; margin: 0 0 10px 0; background: #fff; border:1px solid transparent; font-size: 1.4em; line-height: 1.2em; word-wrap: break-word; color: #8d8d8d; overflow: hidden; outline: none; }
+.m_comment .publish .input:focus{ border:1px solid #ff4e00; }
+.m_comment .publish .btn{ }
+
+.m_comment .ask{ }
+.m_comment .ask .itme .text .comment_btn,
+.m_comment .ask .itme .revert_area{ display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*

@@ -85,7 +85,10 @@
 .nav_manage .itme .link .title,
 .nav_sub .more:hover > .link,
 .m_share .link,
-.m_itme_3 .itme .icon{
+.m_itme_3 .itme .icon,
+.m_comment .itme .revert .input,
+.m_share .wrap,
+.m_share .wrap .icon_share{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
