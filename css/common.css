@@ -38,7 +38,9 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
-
+.color_ff4e00{
+    color: #ff4e00 ;
+}
 
 .w_per100{ width: 100%; }
 .w_per90{ width: 90%; }
@@ -532,7 +534,43 @@ html.h body .footer{
 .m_itme_4 .icon_circle_cross{ color: #f00; }
 .m_itme_4 .icon_error{ color: #c1b604; }
 
+/* 列表 5 */
+.m_itme_5{
+    
+}
+.m_itme_5 .itme{
+    font-size: 1.4em;
+    line-height: 1.2em;
+    padding: 4px 0;
+}
+.m_itme_5 .itme:nth-child(2n+2){
+     background: rgba(231, 231, 231, 0.4);
+}
+.m_itme_5 .itme .span{
 
+}
+.m_itme_5 .itme .span .icon{
+    padding:0 0 0 4px;
+}
+.m_itme_5 .itme .time{
+    width: 20%;
+}
+.m_itme_5 .itme .name{
+    width: 26%;
+}
+.m_itme_5 .itme .price{
+    width: 24%;
+}
+.m_itme_5 .itme .phone{
+    width: 30%;
+}
+
+.m_itme_5 .itme_head{
+    background: #e7e7e7;
+    color: #009842;
+    font-size: 1.4em;
+    line-height: 2em;
+}
 
 
 /* 字母列表 */
@@ -593,8 +631,6 @@ html.h body .footer{
 .m_product_detail .head .km .icon{ font-size: 1em; line-height:1.2em; }*/
 
 
-
-
 .m_product_detail .head .content{ margin: 20px auto;}
 .m_product_detail .head .content .list{ font-size: 1em; line-height: 1em; color: #8d8d8d; margin: 10px 0; overflow: hidden; }
 .m_product_detail .head .content .list .icon{ padding: 0 4px 0 0; }
@@ -621,7 +657,7 @@ html.h body .footer{
 
 
 
-.m_product_detail .head .vin{ }
+
 
 /* 评估报告 */
 .m_product_detail .assess{
@@ -662,6 +698,44 @@ html.h body .footer{
 .m_detail_img .itme{ padding: 0; font-size: 1em; line-height: 2.4em; color: #8d8d8d; position: relative; margin: 0 0 6px 0; }
 .m_detail_img .itme .title_img{ position: absolute; bottom: 0; left: 0; right: 0; font-size: 1.4em; line-height: 2.4em; color: #fff; background: rgba(0,0,0,.4); }
 .m_detail_img .itme .img{ max-width: 100%; width: 100%; display: block; }
+
+/* 产品 功能区 */
+.m_product_func{
+    
+}
+.m_product_func .center .info .g_col_4{
+    float: none;
+}
+
+
+/* 操作区域 */
+.m_product_func .operation{
+    border-bottom: 1px solid #c4c4c4;
+    overflow: hidden;
+}
+
+.m_product_func .operation .btn_wrap{
+    overflow: hidden;
+}
+
+/* 信息区域 */
+.m_product_func .info{
+    border-bottom: 1px solid #c4c4c4;
+}
+.m_product_func .info .info_list{
+    width: 100%;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    color: #8d8d8d;
+    margin: 0 0 20px 0;
+}
+.m_product_func .info .info_list .remind{
+    color: #ff4e00;
+    font-weight: bold;
+}
+
+
+
 
 
 /* 登陆 */
