@@ -364,7 +364,7 @@ html.h body .footer{
 .m_itme .itme .content .list .state .icon{ font-size: 1.15em; line-height: 0.9em; }
 
 .m_itme .itme .content .list .price{}
-.m_itme .itme .content .list .price .icon{ font-size: 1.1em; line-height: 1.2em;}
+.m_itme .itme .content .list .price .icon{ font-size: 1.1em; line-height: 1em;}
 
 .m_itme .itme .content .list .countdown{ color: #ff4e00; font-size: 1.6em; line-height: 32px; height: 32px; overflow: hidden; }
 .m_itme .itme .content .list .countdown .icon{ color: #8d8d8d; font-size: 0.72em; line-height: 1em; }
@@ -483,7 +483,7 @@ html.h body .footer{
 .m_itme_4s_car .itme .content .price .icon{ font-size:  1.15em;  line-height: 0.9em;}
 
 .m_itme_4s_car .itme .content .preview .price{}
-.m_itme_4s_car .itme .content .preview .price .icon{ font-size: 1.1em; line-height: 1.4em;}
+.m_itme_4s_car .itme .content .preview .price .icon{ font-size: 1.1em; line-height: 1em;}
 
 .m_itme_4s_car .itme .content .preview .auction_succeed .price{}
 .m_itme_4s_car .itme .content .preview .auction_succeed .price .icon{ font-size: 1.4em; line-height: 0.8em;}
@@ -560,17 +560,25 @@ html.h body .footer{
     
 }
 
+.m_product_detail .banner{
+
+}
+.m_product_detail .banner .img{
+    display: block;
+    width: 100%;
+}
+
 /* 产品 头部 */
 .m_product_detail .head{ border-top: 1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; color: #8d8d8d; font-size: 1.4em; }
-.m_product_detail .head .title{ font-size: 1.428571428571429em; line-height: 1.2em; color: #009842; margin: 0 0 10px 0; }
+.m_product_detail .head .title{ font-size: 1.428571428571429em; line-height: 1.2em; color: #009842; /*margin: 0 0 10px 0;*/ }
 
-.m_product_detail .head .date_km,
+/*.m_product_detail .head .date_km,*/
 .m_product_detail .head .vin{ line-height: 1.428571428571429em; overflow: hidden;}
 .m_product_detail .head .vin{
     padding: 10px 0;
 }
 
-.m_product_detail .head .date_km{ }
+/*.m_product_detail .head .date_km{ }
 
 .m_product_detail .head .date_km{  }
 .m_product_detail .head .date_km .icon{padding: 0 4px 0 0;}
@@ -582,7 +590,35 @@ html.h body .footer{
 .m_product_detail .head .produced_date .icon{ font-size: 1em; line-height: 0.9em; }
 
 .m_product_detail .head .km{ }
-.m_product_detail .head .km .icon{ font-size: 1em; line-height:1.2em; }
+.m_product_detail .head .km .icon{ font-size: 1em; line-height:1.2em; }*/
+
+
+
+
+.m_product_detail .head .content{ margin: 20px auto;}
+.m_product_detail .head .content .list{ font-size: 1em; line-height: 1em; color: #8d8d8d; margin: 10px 0; overflow: hidden; }
+.m_product_detail .head .content .list .icon{ padding: 0 4px 0 0; }
+
+.m_product_detail .head .content .list .time,
+.m_product_detail .head .content .list .kilometre,
+.m_product_detail .head .content .list .state,
+.m_product_detail .head .content .list .price{ height: 16px; line-height: 16px; overflow: hidden;vertical-align: top;}
+
+.m_product_detail .head .content .list .time{}
+.m_product_detail .head .content .list .time .icon{ font-size: 1em; line-height:1.2em; }
+
+.m_product_detail .head .content .list .kilometre{}
+.m_product_detail .head .content .list .kilometre .icon{ font-size: 1.2em; line-height: 0.9em; }
+
+.m_product_detail .head .content .list .state{}
+.m_product_detail .head .content .list .state .icon{ font-size: 1.15em; line-height: 0.9em; }
+
+.m_product_detail .head .content .list .price{}
+.m_product_detail .head .content .list .price .icon{ font-size: 1.1em; line-height: 0.9em;}
+
+.m_product_detail .head .content .list .countdown{ color: #ff4e00; font-size: 1.1em;  line-height: 1.2em;}
+.m_product_detail .head .content .list .countdown .icon{ color: #8d8d8d; font-size: 0.76em; line-height: 1.2em; }
+
 
 
 .m_product_detail .head .vin{ }
