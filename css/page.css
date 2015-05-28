@@ -83,7 +83,7 @@
 .nav_manage .itme .link .img_wrap,
 .nav_manage .itme .link .img_wrap .img,
 .nav_manage .itme .link .title,
-.nav_sub .more:hover > .link,
+.nav_sub .more > .link,
 .m_share .link,
 .m_itme_3 .itme .icon,
 .m_comment .itme .revert .input,
@@ -97,7 +97,14 @@
 }
 
 
-
+/* 临时 css */
+.test_wrap{
+    
+}
+.test_wrap .u_btn{
+    font-size:1.4em;
+    line-height: 2em;
+}
 
 
 /*

@@ -12,7 +12,7 @@
 function mianInit(){
     //调试 禁用
 //    alert("x");
-     document.write("<script src=\'http://172.16.1.131:81/con/assets/js/f5.js\'><\script>");
+//     document.write("<script src=\'http://172.16.1.131:81/con/assets/js/f5.js\'><\script>");
 //   document.write("<script src=\'http://192.168.2.107:81/con/assets/js/f5.js\'><\script>");
 }
 mianInit();

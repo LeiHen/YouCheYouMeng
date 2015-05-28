@@ -41,6 +41,11 @@ a:link,a:visited,a:hover,a:active{
 .color_ff4e00{
     color: #ff4e00 ;
 }
+.remind{
+    color: #ff4e00;
+    font-weight: bold;
+}
+
 
 .w_per100{ width: 100%; }
 .w_per90{ width: 90%; }
@@ -529,48 +534,25 @@ html.h body .footer{
 .m_itme_4 .hint{ font-size: 1.2em; line-height: 1em; color: #8d8d8d; background: rgba(231, 231, 231, 0.6); }
 .m_itme_4 .hint .icon{ margin: 0 4px; }
 .m_itme_4 .itme{ position: relative; padding: 0px 10px 0px 144px; font-size: 1.4em; line-height: 2.4em; color: #8d8d8d; margin: 0; border-bottom:1px solid #c4c4c4; }
+
+
 .m_itme_4 .itme .title{ position: absolute; left: 0px; display: block; width: 114px; height: 100%; padding: 0 10px; text-align: right; background: rgba(231, 231, 231, 0.4);overflow: hidden; }
 .m_itme_4 .icon_circle_check{ color: #009842; }
 .m_itme_4 .icon_circle_cross{ color: #f00; }
 .m_itme_4 .icon_error{ color: #c1b604; }
 
 /* 列表 5 */
-.m_itme_5{
-    
-}
-.m_itme_5 .itme{
-    font-size: 1.4em;
-    line-height: 1.2em;
-    padding: 4px 0;
-}
-.m_itme_5 .itme:nth-child(2n+2){
-     background: rgba(231, 231, 231, 0.4);
-}
-.m_itme_5 .itme .span{
+.m_itme_5{ }
+.m_itme_5 .itme{ font-size: 1.4em; line-height: 1.2em; padding: 4px 0; }
+.m_itme_5 .itme:nth-child(2n+2){ background: rgba(231, 231, 231, 0.4); }
 
-}
-.m_itme_5 .itme .span .icon{
-    padding:0 0 0 4px;
-}
-.m_itme_5 .itme .time{
-    width: 20%;
-}
-.m_itme_5 .itme .name{
-    width: 26%;
-}
-.m_itme_5 .itme .price{
-    width: 24%;
-}
-.m_itme_5 .itme .phone{
-    width: 30%;
-}
+.m_itme_5 .itme .span > .padding{ padding:10px 5px; }
+.m_itme_5 .itme .span:first-child .padding{ padding-left: 10px; }
+.m_itme_5 .itme .span:last-child .padding{ padding-right: 10px; }
+.m_itme_5 .itme .span .padding{ }
+.m_itme_5 .itme .span .icon{ padding:0 0 0 4px; }
 
-.m_itme_5 .itme_head{
-    background: #e7e7e7;
-    color: #009842;
-    font-size: 1.4em;
-    line-height: 2em;
-}
+.m_itme_5 .itme_head{ background: #e7e7e7; color: #009842; font-size: 1.4em; line-height: 2em; }
 
 
 /* 字母列表 */
@@ -597,7 +579,6 @@ html.h body .footer{
 .m_product_detail .m_banner{
     
 }
-
 .m_product_detail .banner{
 
 }
@@ -657,23 +638,10 @@ html.h body .footer{
 
 
 
-
-
 /* 评估报告 */
-.m_product_detail .assess{
-    text-align: right;
-    background: #e7e7e7;
-    border-bottom: 1px solid #c4c4c4;
-}
-.m_product_detail .assess .link{
-    color: #8d8d8d;
-    font-size: 1.4em;
-    display: inline-block;
-    line-height: 3em;
-}
-.m_product_detail .assess .icon{
-    
-}
+.m_product_detail .assess{ text-align: right; background: #e7e7e7; border-bottom: 1px solid #c4c4c4; }
+.m_product_detail .assess .link{ color: #8d8d8d; font-size: 1.4em; display: inline-block; line-height: 3em; }
+.m_product_detail .assess .icon{ }
 
 
 /* 产品功能区 */
@@ -687,6 +655,7 @@ html.h body .footer{
 
 /* 产品 列表分类 */
 .m_product_detail .m_itme_3{ }
+
 /* 产品 列表详细 */
 .m_product_detail .m_itme_4{ }
 
@@ -696,6 +665,9 @@ html.h body .footer{
 .m_detail_img .title_mian{ }
 .m_detail_img .title_mian .icon{ width: 20px; display: inline-block; font-size: 1em; line-height: 40px; }
 .m_detail_img .itme{ padding: 0; font-size: 1em; line-height: 2.4em; color: #8d8d8d; position: relative; margin: 0 0 6px 0; }
+.m_detail_img .itme:last-child{
+	margin: 0;
+}
 .m_detail_img .itme .title_img{ position: absolute; bottom: 0; left: 0; right: 0; font-size: 1.4em; line-height: 2.4em; color: #fff; background: rgba(0,0,0,.4); }
 .m_detail_img .itme .img{ max-width: 100%; width: 100%; display: block; }
 
@@ -710,17 +682,48 @@ html.h body .footer{
 
 /* 操作区域 */
 .m_product_func .operation{
-    border-bottom: 1px solid #c4c4c4;
+/*    border-bottom: 1px solid #c4c4c4;*/
     overflow: hidden;
+/*    margin: 20px auto;*/
+}
+.m_product_func .operation .m_itme_4{
+    
+}
+.m_product_func .operation .m_itme_4 .itme{
+    position: relative;
+}
+.m_product_func .operation .m_itme_4 .itme .hint{
+    position: absolute;
+    top: 10px;
+    left:140px;
+    font-size: 1em;
+    color: #c4c4c4;
+    background: none;
+}
+.m_product_func .operation .m_itme_4 .itme .import{
+    color: #ff4e00;
+}
+.m_product_func .operation .m_itme_4 .itme .import:focus + .hint{
+    display: none;
 }
 
 .m_product_func .operation .btn_wrap{
     overflow: hidden;
+    font-size: 1.6em;
+    padding: 20px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+.m_product_func .operation .btn_wrap .span{
+    float: right;
+    padding: 10px 0;
+}
+.m_product_func .operation .btn_wrap .icon{
+    line-height: 1.2em;
 }
 
 /* 信息区域 */
 .m_product_func .info{
-    border-bottom: 1px solid #c4c4c4;
+/*    border-top: 1px solid #c4c4c4;*/
 }
 .m_product_func .info .info_list{
     width: 100%;
@@ -729,9 +732,18 @@ html.h body .footer{
     color: #8d8d8d;
     margin: 0 0 20px 0;
 }
-.m_product_func .info .info_list .remind{
-    color: #ff4e00;
-    font-weight: bold;
+
+.m_product_func .info_list .itme .time{
+    width: 20%;
+}
+.m_product_func .info_list .itme .name{
+    width: 28%;
+}
+.m_product_func .info_list .itme .price{
+    width: 24%;
+}
+.m_product_func .info_list .itme .phone{
+    width: 28%;
 }
 
 
@@ -809,7 +821,7 @@ html.h body .footer{
 
 /* 评论 */
 .m_comment{ }
-.m_comment .itme{ padding:10px 10px 10px 60px; position: relative;border-bottom: 1px solid #c4c4c4; /*overflow: hidden; */}
+.m_comment .itme{ padding:10px 10px 10px 60px; /*margin: 10px 0 0px 0;*/ position: relative;border-bottom: 1px solid #c4c4c4; /*overflow: hidden; */}
 .m_comment .itme .face{ display: block; width: 40px; position: absolute; left: 10px; top: 10px; }
 .m_comment .itme .text{ padding:0 60px 0 0; position: relative; font-size: 1.4em; color: #8d8d8d; }
 .m_comment .itme .text .name{ color: #ff4e00; margin: 0 6px 0 0; font-size: 1.2em; }
@@ -828,7 +840,11 @@ html.h body .footer{
 
 .m_comment .itme .revert_area .input:focus{ border:1px solid #ff4e00; }
 
-.m_comment .itme .revert_area::before{ content:''; position:absolute; border-style: solid; border-width: 0px 5px 5px 5px; border-color: transparent transparent #e7e7e7 transparent; bottom: 100%; right: 18px; z-index: 1; }
+.m_comment .itme .revert_area::before,
+.m_comment .itme .revert_area::after{ content:''; position:absolute; right: 18px; border-style: solid; border-width: 0px 5px 5px 5px; z-index: 1; }
+.m_comment .itme .revert_area::before{ border-color: transparent transparent #e7e7e7 transparent; bottom: 100%; }
+.m_comment .itme .revert_area::after{ border-color: transparent transparent #fff transparent; bottom: 0; }
+
 
 .m_comment .itme .revert_area .btn{ width: 33.333333%; font-size: 1.4em; }
 
@@ -837,13 +853,15 @@ html.h body .footer{
 .m_comment .publish .input:focus{ border:1px solid #ff4e00; }
 .m_comment .publish .btn{ }
 
+
 .m_comment .ask{ }
 .m_comment .ask .itme .text .comment_btn,
 .m_comment .ask .itme .revert_area{ display: none; }
 
-
-
-
+.m_comment .reply .itme .text .comment_btn{ display: block; }
+.m_comment .reply .itme .revert_area{ display: none; }
+.m_comment .reply .itme .none{ display: none; }
+.m_comment .reply .itme .block{ display: block; }
 
 
 
