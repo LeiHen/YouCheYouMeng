@@ -45,6 +45,32 @@
 		    </div>
 		</header>
 		<!-- 头部 ]] -->
+       
+       
+        <!-- 头部 管理 [[ -->
+        <ul class="manage_head padding_lr"> 
+            <li class="itme">
+                <a href="javascript:void(0);" class="link link_icon_exit" title="注销" alt="注销">
+                    <span class="icon icon_exit_01"></span>
+                </a>
+            </li>
+            
+            <li class="itme">
+                <p class="link" title="隔壁老王" alt="隔壁老王">
+                    <span class="icon icon_user"></span>
+                    隔壁老王
+                </p>
+            </li>
+            
+            
+            <li class="itme">
+                <a href="4sIndex.html" class="link link_icon_home" title="管理首页" alt="管理首页">
+                    <span class="icon icon_home"></span>
+                </a>
+            </li>
+        </ul>
+        <!-- 头部 管理 ]] -->
+        
         
         <!-- 主要 [[ -->
         <div class="main">
@@ -76,14 +102,57 @@
                                 <span class="title">询价时间</span>
                                 <input type="date">
                                 <input type="time">
-                                
-                                <input type="text" value="2012-05-15 21:05" id="datetimepicker">
-                                <div id="datetimepicker"></div>
                             </li>
-
+                            
                         </ul>
                         
+                        <div class="m_itme_2 u_itme_color m_input">
+							<h3 class="u_title padding_lr">询价时长</h3>
+
+							<ul class="content padding_lr g_col_5">
+								<li class="itme span">
+										<input class="u_input input" name="enquiryTime" type="radio" value="30" checked="checked" >
+										<a href="javascript:void(0);" class="link u_btn2_gray hover">0.5h</a>
+								</li>
+								<li class="itme span">
+								
+										<input class="u_input input" name="enquiryTime" type="radio" value="60">
+										<a href="javascript:void(0);" class="link u_btn2_gray">1h</a>
+								</li>
+								<li class="itme span">
+									
+										<input class="u_input input" name="enquiryTime" type="radio" value="120">
+										<a href="javascript:void(0);" class="link u_btn2_gray">2h</a>
+									
+								</li>
+								<li class="itme span">
+									
+										<input class="u_input input" name="enquiryTime" type="radio" value="360">
+										<a href="javascript:void(0);" class="link u_btn2_gray">6h</a>
+									
+								</li>
+								<li class="itme span">
+									
+										<input class="u_input input" name="enquiryTime" type="radio" value="720">
+										<a href="javascript:void(0);" class="link u_btn2_gray">12h</a>
+									
+								</li>
+								<li class="itme span">
+									
+										<input class="u_input input" name="enquiryTime" type="radio" value="1440">
+										<a href="javascript:void(0);" class="link u_btn2_gray">24h</a>
+									
+								</li>
+							</ul>
+							
+						</div>
+						
                         
+                        <div class="subitm_wrap p10">
+							<a href="javascrit:void(0);" class="u_btn e_btn_gray w">
+							   <div class="p">提交</div>
+							</a>
+						</div>
                                           
                     </div>
                     <!-- 操作区域 ]] -->                    
@@ -132,21 +201,14 @@
         <script src="js/base.js"></script>
         <script src="js/common.js"></script>
         <script src="js/page.js"></script>
-       
-        <style src="css/bootstrap.min.css"></style>
-        <style src="css/bootstrap-theme.min.css"></style>
-        
-        <script src="js/lib/bootstrap.min.js"></script>
-        <script src="js/lib/bootstrap-datetimepicker.min.js"></script>
-        <script src="js/lib/bootstrap-datetimepicker.zh-CN.js"></script>
+ 
         
         <!-- 当前页面调用函数 -->
         <script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-                $('#datetimepicker').datetimepicker({
-					format: 'yyyy-mm-dd hh:ii'
-				});
+				
+				
 			}
 			init();
             

@@ -71,6 +71,13 @@
 
 
 
+/* 发布拍卖 */
+.time_continue .m_input .itme {
+	font-size: 1em;
+}
+
+
+
 
 /* css3过渡 */
 .header .location,
@@ -88,7 +95,8 @@
 .m_itme_3 .itme .icon,
 .m_comment .itme .revert .input,
 .m_share .wrap,
-.m_share .wrap .icon_share{
+.m_share .wrap .icon_share,
+.m_input .input .link{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
