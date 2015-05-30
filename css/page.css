@@ -8,52 +8,25 @@
 
 
 /* 主要 */
-.main .more{
-    font-size: 2em;
-    margin:30px auto;
-    display: block;
-}
-.main .gps{
-    display: block;
-    cursor: pointer;
-}
-.main .gps:hover{
-	background: #aaaaaa;
-}
+.main .more{ font-size: 2em; margin:30px auto; display: block; }
+.main .gps{ display: block; cursor: pointer; }
+.main .gps:hover{ background: #aaaaaa; }
 
 
 /* 登陆 */
-.login{
-    
-}
-.login .u_title{
-/*    text-align: center;*/
-}
+.login{ }
+.login .u_title{ }
 
 
 /* 找回密码 */
-.retrieve_password{
-    
-}
-.retrieve_password .rpsw{
-    margin: 40px auto;
-}
-.retrieve_password .rpsw .itme{
-    margin: 30px auto;
-}
-.retrieve_password .rpsw .itme .u_btn{
-    font-size: 2em;
-    line-height: 2em;
-    border-radius: 2em;
-}
+.retrieve_password{ }
+.retrieve_password .rpsw{ margin: 40px auto; }
+.retrieve_password .rpsw .itme{ margin: 30px auto; }
+.retrieve_password .rpsw .itme .u_btn{ font-size: 2em; line-height: 2em; border-radius: 2em; }
 
 /* 找回密码 详细 */
-.retrieve_password_detail{
-    
-}
-.retrieve_password_detail .rpsw{
-     margin: 40px auto;
-}
+.retrieve_password_detail{ }
+.retrieve_password_detail .rpsw{ margin: 40px auto; }
 
 
 
@@ -62,21 +35,32 @@
 
 
 /* 全部地区 */
-.all_filtrate{
-	
-}
-.all_filtrate{
-	
-}
+.all_filtrate{ }
+.all_filtrate{ }
 
 
 
 /* 发布拍卖 */
-.time_continue .m_input .itme {
-	font-size: 1em;
+.time_continue .m_input .itme { font-size: 1em; }
+
+/* 参与对象 */
+
+.participation_obj{ }
+
+.participation_obj > .content .itme{ }
+.participation_obj > .content .hover{
+	background: rgba(231, 231, 231, 0.4);
 }
 
 
+.participation_obj .participate_ul .content{display: none;}
+.participation_obj .participate_ul .content:first-child{
+	display: block;
+}
+
+.participate_ul{
+	background: rgba(231, 231, 231, 0.4)
+}
 
 
 /* css3过渡 */
