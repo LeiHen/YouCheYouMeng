@@ -63,6 +63,15 @@
 }
 
 
+/* 信息汇总 */
+.info_collect{ font-size: 1.4em; line-height: 1em; color: #8d8d8d;}
+.info_collect b{ color: #ff4e00; }
+
+
+
+
+
+
 /* css3过渡 */
 .header .location,
 .header .member,
